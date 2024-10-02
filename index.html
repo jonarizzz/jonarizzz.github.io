@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Визитка Yauheni Azaronak">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-switcher a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            /* border: 2px solid transparent; */
+            transition: background-color 0.3s, border 0.3s;
+        }
+        .language-switcher a.active {
+            background-color: #333;
+            color: #fff;
+            /* border: 2px solid #333; */
+        }
+        .language-switcher a:hover {
+            background-color: #a2a2a2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="language-switcher">
+    <a href="#" id="ru-btn">Русский</a>
+    <a href="#" id="en-btn">English</a>
+</div>
+
+<div>
+    <h1 id="name">Yauheni Azaronak</h1>
+    <p id="role">Frontend / Backend Developer</p>
+
+    <div class="contact-info">
+        <p id="phone-label">Телефон: <a href="tel:+1234567890">+1234567890</a></p>
+        <p id="email-label">Email: <a href="mailto:example@mail.com"></a></p>
+        <p id="telegram-label">Сайт: <a href="https://t.me/Azaratos" target="_blank">@Azaratos</a></p>
+    </div>
+</div>
+
+<script>
+    // Переменные для хранения текстов на разных языках
+    const translations = {
+        ru: {
+            name: "Евгений Азарёнок",
+            role: "Frontend / Backend Developer",
+            // phone: "Телефон",
+            email: "Почта",
+            telegram: "Телеграм",
+        },
+        en: {
+            name: "Yauheni Azaronak",
+            role: "Frontend / Backend Developer",
+            // phone: "Phone",
+            email: "Email",
+            telegram: "Telegram",
+        }
+    };
+
+    // Получаем элементы
+    const ruBtn = document.getElementById("ru-btn");
+    const enBtn = document.getElementById("en-btn");
+
+    const nameEl = document.getElementById("name");
+    const roleEl = document.getElementById("role");
+    // const phoneLabelEl = document.getElementById("phone-label");
+    const emailLabelEl = document.getElementById("email-label");
+    const telegramLabelEl = document.getElementById("telegram-label");
+
+    // Функция переключения языка
+    function switchLanguage(language) {
+        const text = translations[language];
+        nameEl.textContent = text.name;
+        roleEl.textContent = text.role;
+        // phoneLabelEl.innerHTML = `${text.phone}: <a href="tel:+1234567890">+1234567890</a>`;
+        emailLabelEl.innerHTML = `${text.email}: <a href="mailto:example@mail.com">example@mail.com</a>`;
+        telegramLabelEl.innerHTML = `${text.telegram}: <a href="https://t.me/Azaratos target="_blank">@Azaratos</a>`;
+
+        // Установка активной кнопки
+        if (language === "ru") {
+            ruBtn.classList.add("active");
+            enBtn.classList.remove("active");
+        } else {
+            enBtn.classList.add("active");
+            ruBtn.classList.remove("active");
+        }
+
+        // Сохранение выбранного языка в localStorage
+        localStorage.setItem("selectedLanguage", language);
+    }
+
+    // Проверка сохранённого языка при загрузке страницы
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "ru";
+    switchLanguage(savedLanguage);
+
+    // Обработчики кликов по кнопкам переключения
+    ruBtn.addEventListener("click", function () {
+        switchLanguage("ru");
+    });
+
+    enBtn.addEventListener("click", function () {
+        switchLanguage("en");
+    });
+</script>
+
+</body>
+</html>
