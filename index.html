@@ -9,40 +9,58 @@
         body {
             font-family: 'Courier New', Courier, monospace;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             text-align: center;
             color: #333;
             position: relative;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('carpet.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
+
+        .info-block {
+            background-color: beige;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 24px;
             margin: 10px 0;
         }
+
         .contact-info {
             margin-top: 20px;
             font-size: 20px;
         }
+
         .contact-info a {
             text-decoration: none;
             color: #007BFF;
         }
+
         .contact-info a:hover {
             text-decoration: underline;
         }
+
         .language-switcher {
             position: absolute;
             top: 20px;
             right: 20px;
         }
+
         .language-switcher a {
             display: inline-block;
             padding: 10px 20px;
@@ -52,14 +70,14 @@
             color: #333;
             text-decoration: none;
             font-size: 18px;
-            /* border: 2px solid transparent; */
             transition: background-color 0.3s, border 0.3s;
         }
+
         .language-switcher a.active {
             background-color: #333;
             color: #fff;
-            /* border: 2px solid #333; */
         }
+
         .language-switcher a:hover {
             background-color: #a2a2a2;
         }
@@ -72,7 +90,7 @@
     <a href="#" id="en-btn">English</a>
 </div>
 
-<div>
+<div class="info-block">
     <h1 id="name">Yauheni Azaronak</h1>
     <p id="role">Frontend / Backend Developer</p>
 
