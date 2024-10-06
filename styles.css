@@ -7,13 +7,15 @@ body {
 }
 
 .language-switcher {
-    border: 2px solid rgb(0, 255, 234);
+    /* border: 2px solid rgb(0, 255, 234); */
     height: 60px;
+    background-color: rgb(243, 243, 238);
+
 }
 
 
 .personal-container {
-    border: 2px solid rgb(255, 0, 0); 
+    /* border: 2px solid rgb(255, 0, 0);  */
     display: flex; 
     flex-wrap: wrap;
     column-gap: 50px;
@@ -22,7 +24,7 @@ body {
 }
 
 .avatar-container {
-    border: 2px solid rgb(0, 0, 0); 
+    /* border: 2px solid rgb(0, 0, 0);  */
     flex: 2;
     display: flex;
     align-items: center;
@@ -31,7 +33,7 @@ body {
 
 .personal-info-container {
     text-align: center;
-    border: 2px solid rgb(166, 0, 19); 
+    /* border: 2px solid rgb(166, 0, 19);  */
     border-radius: 20px;
     background-color: rgb(243, 243, 238);
     flex: 4;
@@ -45,7 +47,7 @@ body {
 }
 
 .framed-avatar {
-    border: 2px solid rgb(234, 255, 0);
+    /* border: 2px solid rgb(234, 255, 0); */
     position: relative;
     width: 300px;
     height: 300px;
@@ -63,7 +65,7 @@ body {
 }
 
 .frame-img {
-    border: 2px solid rgb(21, 255, 0);
+    /*border: 2px solid rgb(21, 255, 0);*/
     position: absolute;
     width: 300px;
     height: 300px;
@@ -72,7 +74,7 @@ body {
 }
 
 .about-me {
-    border: 2px solid rgb(255, 0, 247);
+    /*border: 2px solid rgb(255, 0, 247);*/
     margin: 15px;
     text-align: left;
 }
