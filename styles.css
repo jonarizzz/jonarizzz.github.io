@@ -7,15 +7,11 @@ body {
 }
 
 .language-switcher {
-    /* border: 2px solid rgb(0, 255, 234); */
     height: 60px;
     background-color: rgb(243, 243, 238);
-
 }
 
-
 .personal-container {
-    /* border: 2px solid rgb(255, 0, 0);  */
     display: flex; 
     flex-wrap: wrap;
     column-gap: 50px;
@@ -24,7 +20,6 @@ body {
 }
 
 .avatar-container {
-    /* border: 2px solid rgb(0, 0, 0);  */
     flex: 2;
     display: flex;
     align-items: center;
@@ -32,11 +27,15 @@ body {
 }
 
 .personal-info-container {
-    text-align: center;
-    /* border: 2px solid rgb(166, 0, 19);  */
-    border-radius: 20px;
     background-color: rgb(243, 243, 238);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
     flex: 4;
+}
+
+.personal-info-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* On smaller screens, stack the avatar on top of the personal info */
@@ -47,7 +46,6 @@ body {
 }
 
 .framed-avatar {
-    /* border: 2px solid rgb(234, 255, 0); */
     position: relative;
     width: 300px;
     height: 300px;
@@ -55,17 +53,15 @@ body {
 
 .avatar-img {
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 280px;
+    height: 280px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border-radius: 50%; */
-    /* box-shadow: 0px 0px 55px 55px rgb(0, 0, 0); */
+    border: 10px solid rgb(255, 255, 255);
 }
 
 .frame-img {
-    /*border: 2px solid rgb(21, 255, 0);*/
     position: absolute;
     width: 300px;
     height: 300px;
@@ -74,14 +70,18 @@ body {
 }
 
 .about-me {
-    /*border: 2px solid rgb(255, 0, 247);*/
     margin: 15px;
     text-align: left;
 }
 
 .technologies-container {
-    border: 2px solid rgb(255, 0, 247);
+    border: 5px solid rgb(245, 255, 134);
+    background-color: rgb(55, 117, 67);
     height: 250px;
+    margin: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(245, 255, 134);
 }
 
 .experience-container {
