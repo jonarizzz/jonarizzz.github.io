@@ -1,100 +1,113 @@
 body {
+    margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('carpet.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
-.language-switcher {
-    height: 60px;
-    background-color: rgb(243, 243, 238);
+.header {
+    position: static;
+    top: 0;
+    padding: 3px 16px;
+    background: #555;
+    color: #f1f1f1;
+    z-index: 100;
 }
 
-.personal-container {
-    display: flex; 
-    flex-wrap: wrap;
-    column-gap: 50px;
-    row-gap: 30px;
-    margin: 50px;
-}
-
-.avatar-container {
-    flex: 2;
+.container {
     display: flex;
+    height: 150vh;
+    flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
+    position: relative;
+    z-index: 1;
+}
+
+.side-panel {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    z-index: 10;
     align-items: center;
     justify-content: center;
 }
 
-.personal-info-container {
-    background-color: rgb(243, 243, 238);
-    border: 1px solid rgb(0, 0, 0);
-    text-align: center;
+.side-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(65px, 65px)); /* Auto-adjust columns */
+    justify-content: center; /* Center-aligns grid items horizontally */
+    justify-items: center; /* Centers each item within its grid cell */
+
+}
+
+.side-item {
+    width: 35px;
+    height: 35px;
+    display: flex;
     align-items: center;
-    flex: 4;
+    justify-content: center;
+    color: #000000;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
 }
 
-.personal-info-container:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.side-item img {
+    width: 40px;
+    height: 40px;
 }
 
-/* On smaller screens, stack the avatar on top of the personal info */
-@media (max-width: 900px) {
-    .avatar-container, .personal-info-container {
-        flex: 100%; /* Make them take 100% width on small screens */
-    }
-}
-
-.framed-avatar {
-    position: relative;
-    width: 300px;
-    height: 300px;
+.side-item:hover {
+    transform: scale(1.04); /* Slightly enlarge on hover */
 }
 
 .avatar-img {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
     border: 10px solid rgb(255, 255, 255);
 }
 
-.frame-img {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 0;
-    left: 0;
+.content-panel {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-.about-me {
-    margin: 15px;
-    text-align: left;
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Auto-adjust columns */
+    gap: 16px; /* Space between cards */
+    padding: 20px;
 }
 
-.technologies-container {
-    border: 5px solid rgb(245, 255, 134);
-    background-color: rgb(55, 117, 67);
-    height: 250px;
-    margin: 50px;
-    border-radius: 20px;
-    text-align: center;
-    color: rgb(245, 255, 134);
+.content-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
 }
 
-.experience-container {
-    border: 2px solid rgb(255, 0, 247);
-    height: 250px;
+.content-item:hover {
+    transform: scale(1.01); /* Slightly enlarge on hover */
 }
 
-.contacts-container {
-    border: 2px solid rgb(255, 0, 247);
-    height: 250px;
-}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
 
-.footer {
-    border: 2px solid rgb(255, 0, 247);
-    height: 250px;
+    .container {
+        flex-direction: column; /* Stack side panel and content panel vertically */
+        flex-wrap: nowrap;
+    }
+
+    .side-panel, .content-panel {
+        width: 100%; /* Both panels take full width */
+        margin: 0; /* Reset any margins */
+        padding: 20px; /* Apply consistent padding */
+        box-sizing: border-box; /* Include padding in the element's total width */
+    }
+
 }
