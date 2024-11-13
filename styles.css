@@ -14,20 +14,27 @@ body {
 
 .container {
     display: flex;
-    height: 150vh;
     flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
     position: relative;
     z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/carpet.jpg');
+    background-size: cover; /* Keep cover scaling */
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .side-panel {
-    width: 250px;
-    background-color: #333;
     color: white;
+    width: 250px;
+    margin-top: 15px;
     padding: 20px;
     z-index: 10;
     align-items: center;
     justify-content: center;
+
+    position: sticky; /* Makes the side panel sticky */
+    top: 0; /* Stick to the top when scrolling */
+    height: 100vh;
 }
 
 .side-grid {
@@ -60,22 +67,18 @@ body {
 }
 
 .side-item:hover {
-    transform: scale(1.04); /* Slightly enlarge on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .avatar-img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border: 5px solid rgb(255, 255, 255);
 }
 
 .content-panel {
     flex: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/carpet.jpg');
-    background-size: 100% auto;
-    background-repeat: repeat-y;
-    background-position: top;
-    padding: 20px;
+    margin-top: 15px;
 }
 
 .content-grid {
@@ -98,12 +101,27 @@ body {
     grid-column: 1 / -1; /* Makes it span across all columns */
 }
 
+.floppy {
+    text-align: center;
+}
+
+.floppy img:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 
     .container {
         flex-direction: column; /* Stack side panel and content panel vertically */
         flex-wrap: nowrap;
+    }
+
+    .side-panel {
+        position: relative; /* Remove sticky behavior on smaller screens */
+        top: auto;
+        height: auto;
     }
 
     .side-panel, .content-panel {
