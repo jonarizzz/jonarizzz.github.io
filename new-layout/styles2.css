@@ -26,6 +26,41 @@ body {
     color: white;
     padding: 20px;
     z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(65px, 65px)); /* Auto-adjust columns */
+    justify-content: center; /* Center-aligns grid items horizontally */
+    justify-items: center; /* Centers each item within its grid cell */
+
+}
+
+.side-item {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.side-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.side-item:hover {
+    transform: scale(1.04); /* Slightly enlarge on hover */
 }
 
 .avatar-img {
