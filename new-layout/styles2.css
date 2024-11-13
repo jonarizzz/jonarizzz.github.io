@@ -56,7 +56,7 @@ body {
 }
 
 .content-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.01); /* Slightly enlarge on hover */
 }
 
 /* Media query for smaller screens */
