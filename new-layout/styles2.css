@@ -6,7 +6,7 @@ body {
 .header {
     position: static;
     top: 0;
-    padding: 20px 16px;
+    padding: 3px 16px;
     background: #555;
     color: #f1f1f1;
     z-index: 100;
@@ -64,8 +64,9 @@ body {
 }
 
 .avatar-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    border: 10px solid rgb(255, 255, 255);
 }
 
 .content-panel {
