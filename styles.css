@@ -90,10 +90,6 @@ body {
     transition: transform 0.2s; /* Animation for hover effect */
 }
 
-.content-item:hover {
-    transform: scale(1.01); /* Slightly enlarge on hover */
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 
