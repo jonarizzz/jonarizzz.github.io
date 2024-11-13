@@ -136,3 +136,20 @@ body {
     }
 
 }
+
+@media (max-width: 480px) {
+    .content-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+        gap: 8px; /* Smaller gap to save space */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .content-item {
+        padding: 12px; /* Adjust padding to fit small screens */
+    }
+
+    .avatar-img {
+        width: 150px; /* Reduce avatar size for small screens */
+        height: 150px;
+    }
+}
