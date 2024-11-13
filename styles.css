@@ -72,22 +72,27 @@ body {
 .content-panel {
     flex: 1;
     background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .content-grid {
     display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); !* Auto-adjust columns *!*/
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Auto-adjust columns */
     gap: 16px; /* Space between cards */
     padding: 20px;
 }
 
 .content-item {
-    background-color: white;
+    background-color: rgb(255, 254, 237);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.content-item-professional-experience {
+    grid-column: 1 / -1; /* Makes it span across all columns */
 }
 
 /* Media query for smaller screens */
@@ -103,6 +108,10 @@ body {
         margin: 0; /* Reset any margins */
         padding: 20px; /* Apply consistent padding */
         box-sizing: border-box; /* Include padding in the element's total width */
+    }
+
+    .content-panel {
+        padding: 0; /* Apply consistent padding */
     }
 
 }
