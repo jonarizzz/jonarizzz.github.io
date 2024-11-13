@@ -71,7 +71,10 @@ body {
 
 .content-panel {
     flex: 1;
-    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/carpet.jpg');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top;
     padding: 20px;
 }
 
