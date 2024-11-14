@@ -17,7 +17,6 @@
 
 .cube-face {
     position: absolute;
-    border: 2px solid #fff;
     box-sizing: border-box;
     background-color: transparent;
 }
@@ -25,41 +24,47 @@
 .cube-face.front {
     width: 200px;
     height: 300px;
-    background: #FF6347;
+    background: #154900;
     transform: translateZ(15px) translateX(50px);
+    border: 2px solid #113d00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cube-face.back {
     width: 200px;
     height: 300px;
-    background: #4682B4;
+    background: #154900;
+    border: 2px solid #113d00;
     transform: rotateY(180deg) translateX(-50px) translateZ(15px);
 }
 
 .cube-face.left {
     width: 30px;
     height: 300px;
-    background: #32CD32;
+    background: #fff0c7;
     transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(235px);
 }
 
 .cube-face.right {
     width: 30px;
     height: 300px;
-    background: #FFD700;
+    background: #154900;
+    border: 2px solid #113d00;
     transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(-35px);
 }
 
 .cube-face.top {
     width: 200px;
     height: 30px;
-    background: #8A2BE2;
+    background: #fff0c7;
     transform: rotateX(90deg) translateX(50px) translateY(0px) translateZ(15px);
 }
 
 .cube-face.bottom {
     width: 200px;
     height: 30px;
-    background: #FF1493;
+    background: #fff0c7;
     transform: rotateX(-90deg) translateX(50px) translateY(0px) translateZ(285px);
 }
