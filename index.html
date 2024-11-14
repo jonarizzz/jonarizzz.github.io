@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zhenyok's Lair">
     <title>Zhenyok's Lair</title>
-    <link rel="icon" type="image/x-icon" href="/media/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.ico">
     <!-- TODO: working favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="/media/favicon/favicon.ico"/>
-
+    <link rel="shortcut icon" type="image/jpg" href="./media/favicon/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cube.css">
 
 </head>
 <body>
@@ -17,6 +17,8 @@
 <header>
     Azaronak Yauheni
 </header>
+
+
 
 <!-- TODO: Meta-info for fast review -->
 <!-- TODO: Language change button -->
@@ -385,7 +387,73 @@
                     <li>Polish – pre-intermediate</li>
                 </ul>
             </div>
+            <div class="content-item">
+                <h1>Test 3D object</h1>
+                <br/>
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    const cube = document.querySelector('.cube');
+    let isDragging = false;
+    let startX, startY;
+    let rotationX = -20, rotationY = 0;
+    let idleRotation = true;
+
+    // Start rotation on mousedown
+    document.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        idleRotation = false; // Stop idle rotation
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    // Update rotation based on mouse movement
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+
+        rotationY += deltaX * 0.5;
+        rotationX -= deltaY * 0.5;
+
+        cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    // End rotation on mouseup
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        idleRotation = true; // Resume idle rotation
+    });
+
+    // Idle rotation function
+    function animateIdleRotation() {
+        if (idleRotation && !isDragging) {
+            rotationY += 0.1; // Adjust speed of idle rotation
+            cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+        }
+        requestAnimationFrame(animateIdleRotation);
+    }
+
+    // Start idle rotation
+    // animateIdleRotation();
+</script>
+
 </body>
+</html>
