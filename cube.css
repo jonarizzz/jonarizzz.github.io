@@ -26,40 +26,40 @@
     width: 200px;
     height: 300px;
     background: #FF6347;
-    transform: translateZ(15px);
+    transform: translateZ(15px) translateX(50px);
 }
 
 .cube-face.back {
     width: 200px;
     height: 300px;
     background: #4682B4;
-    transform: rotateY(180deg) translateZ(15px);
+    transform: rotateY(180deg) translateX(-50px) translateZ(15px);
 }
 
 .cube-face.left {
     width: 30px;
     height: 300px;
     background: #32CD32;
-    transform: rotateY(90deg) translateX(0px) translateZ(185px);
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(235px);
 }
 
 .cube-face.right {
     width: 30px;
     height: 300px;
     background: #FFD700;
-    transform: rotateY(-90deg) translateX(0px) translateZ(15px);
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(-35px);
 }
 
 .cube-face.top {
     width: 200px;
     height: 30px;
     background: #8A2BE2;
-    transform: rotateX(90deg) translateY(0px) translateZ(15px);
+    transform: rotateX(90deg) translateX(50px) translateY(0px) translateZ(15px);
 }
 
 .cube-face.bottom {
     width: 200px;
     height: 30px;
     background: #FF1493;
-    transform: rotateX(-90deg) translateY(0px) translateZ(285px);
+    transform: rotateX(-90deg) translateX(50px) translateY(0px) translateZ(285px);
 }
