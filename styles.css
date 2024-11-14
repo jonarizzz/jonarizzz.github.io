@@ -120,6 +120,11 @@ header {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 
+    .avatar-img {
+        width: 350px;
+        height: 350px;
+    }
+
     .container {
         flex-direction: column; /* Stack side panel and content panel vertically */
         flex-wrap: nowrap;
@@ -146,8 +151,13 @@ header {
 
 @media (max-width: 480px) {
     header {
-        font-size: 30px;
+        font-size: 50px;
         text-shadow: 1px 1px black;
+    }
+
+    .avatar-img {
+        width: 300px;
+        height: 300px;
     }
 
     .content-grid {
@@ -158,10 +168,5 @@ header {
 
     .content-item {
         padding: 12px; /* Adjust padding to fit small screens */
-    }
-
-    .avatar-img {
-        width: 150px; /* Reduce avatar size for small screens */
-        height: 150px;
     }
 }
