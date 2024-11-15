@@ -1,8 +1,7 @@
 @font-face {
     font-family: CustomHeaderFont;
-    src: url('media/fonts/Pilotka.ttf');
+    src: url('media/fonts/Natasha.ttf');
 }
-
 
 body {
     margin: 0;
@@ -11,14 +10,14 @@ body {
 
 header {
     font-family: 'CustomHeaderFont';
-    text-shadow: 2px 2px black;
     text-align: center;
     font-size: 70px;
     position: static;
     top: 0;
-    padding: 20px;
-    background: #00ffa4;
-    color: #ff00e7;
+    padding: 10px;
+    padding-top: 25px;
+    background: #ffc907;
+    color: #c62027;
     z-index: 100;
 }
 
@@ -28,8 +27,16 @@ header {
     flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
     position: relative;
     z-index: 1;
-    background-size: cover; /* Keep cover scaling */
-    background: linear-gradient(0deg, #1e0093 0%, #6e008c 100%) fixed center;
+    background-size: cover; 
+    background:
+      conic-gradient(from 0deg at calc(500%/6) calc(100%/3),#abc9b1 0 120deg,#0000 0),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),#72ab9d 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(100%/3) calc(500%/6),#8bb394 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(200%/3) calc(500%/6),#8bb394 0 120deg,#0000 0),
+      conic-gradient(from -180deg at calc(100%/3) 50%,#72ab9d  60deg,#8bb394 0 120deg,#0000 0),
+      conic-gradient(from 60deg at calc(200%/3) 50%,#8bb394  60deg,#abc9b1 0 120deg,#0000 0),
+      conic-gradient(from -60deg at 50% calc(100%/3),#8bb394 120deg,#72ab9d 0 240deg,#abc9b1 0);
+    background-size: 104px 60px;
 }
 
 .side-panel {
@@ -40,17 +47,17 @@ header {
     z-index: 10;
     align-items: center;
     justify-content: center;
-    position: sticky; /* Makes the side panel sticky */
-    top: 0; /* Stick to the top when scrolling */
+    position: sticky;
+    top: 0;
     height: 100vh;
 }
 
 .side-grid {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(65px, 65px)); /* Auto-adjust columns */
-    justify-content: center; /* Center-aligns grid items horizontally */
-    justify-items: center; /* Centers each item within its grid cell */
+    grid-template-columns: repeat(auto-fill, minmax(65px, 65px));
+    justify-content: center;
+    justify-items: center;
 }
 
 .side-item {
@@ -61,11 +68,10 @@ header {
     justify-content: center;
     color: #000000;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid #000000;
     padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Animation for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .side-item img {
@@ -74,13 +80,13 @@ header {
 }
 
 .side-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
 .avatar-img {
     width: 220px;
     height: 220px;
-    border: 10px ridge rgb(253, 210, 0);
+    border: 15px ridge #a4722d;
 }
 
 .content-panel {
@@ -91,20 +97,21 @@ header {
 .content-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-flow: dense;
     gap: 30px;
     padding: 20px;
 }
 
 .content-item {
-    background-color: rgb(255, 255, 255);
+    background-color: #e7e1d5;
     border: 5px double #000000;
     padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-item-professional-experience {
-    grid-column: 1 / -1; /* Makes it span across all columns */
+    grid-column: 1 / -1;
 }
 
 .floppy {
@@ -114,14 +121,14 @@ header {
 .floppy img {
     height: 250px;
     width: 250px;
+    filter: invert(14%) sepia(6%) saturate(6889%) hue-rotate(319deg) brightness(97%) contrast(83%);
 }
 
 .floppy img:hover {
     transition: transform 0.2s;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
 
     .avatar-img {
@@ -130,25 +137,25 @@ header {
     }
 
     .container {
-        flex-direction: column; /* Stack side panel and content panel vertically */
+        flex-direction: column;
         flex-wrap: nowrap;
     }
 
     .side-panel {
-        position: relative; /* Remove sticky behavior on smaller screens */
+        position: relative;
         top: auto;
         height: auto;
     }
 
     .side-panel, .content-panel {
-        width: 100%; /* Both panels take full width */
-        margin: 0; /* Reset any margins */
-        padding: 20px; /* Apply consistent padding */
-        box-sizing: border-box; /* Include padding in the element's total width */
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .content-panel {
-        padding: 0; /* Apply consistent padding */
+        padding: 0;
     }
 
 }
@@ -165,12 +172,12 @@ header {
     }
 
     .content-grid {
-        grid-template-columns: 1fr; /* Single column on very small screens */
-        padding: 10px; /* Smaller padding */
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
 
     .content-item {
-        padding: 12px; /* Adjust padding to fit small screens */
+        padding: 12px;
     }
 }
 
@@ -195,4 +202,5 @@ header {
         height: 80%;
     }
 }
+
 

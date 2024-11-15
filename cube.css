@@ -24,9 +24,9 @@
 .cube-face.front {
     width: 200px;
     height: 300px;
-    background: #154900;
+    background: #ffbdd8;
     transform: translateZ(15px) translateX(50px);
-    border: 2px solid #113d00;
+    border: 2px solid #ff7ab1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,36 +35,48 @@
 .cube-face.back {
     width: 200px;
     height: 300px;
-    background: #154900;
-    border: 2px solid #113d00;
+    background: #ffbdd8;
+    border: 2px solid #ff7ab1;
     transform: rotateY(180deg) translateX(-50px) translateZ(15px);
 }
 
 .cube-face.left {
     width: 30px;
     height: 300px;
-    background: #fff0c7;
+    background-image: repeating-linear-gradient(to right, #73570c, #73570c 0.5px, transparent 0.5px, transparent);
+    background-size: 3px 3px;
+    background-color: #fff0b6;
     transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(235px);
 }
 
 .cube-face.right {
     width: 30px;
     height: 300px;
-    background: #154900;
-    border: 2px solid #113d00;
+    background: #ffbdd8;
+    border: 2px solid #ff7ab1;
     transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(-35px);
 }
 
 .cube-face.top {
     width: 200px;
     height: 30px;
-    background: #fff0c7;
+    background-image: repeating-linear-gradient(0deg, #73570c, #73570c 0.5px, transparent 0.5px, transparent);
+    background-size: 3px 3px;
+    background-color: #fff0b6;
     transform: rotateX(90deg) translateX(50px) translateY(0px) translateZ(15px);
 }
 
 .cube-face.bottom {
     width: 200px;
     height: 30px;
-    background: #fff0c7;
+    background-image: repeating-linear-gradient(0deg, #73570c, #73570c 0.5px, transparent 0.5px, transparent);
+    background-size: 3px 3px;
+    background-color: #fff0b6;
     transform: rotateX(-90deg) translateX(50px) translateY(0px) translateZ(285px);
+}
+
+.question {
+    height: 200px; 
+    pointer-events: none;
+    filter: invert(39%) sepia(99%) saturate(2569%) hue-rotate(313deg) brightness(103%) contrast(102%);
 }
