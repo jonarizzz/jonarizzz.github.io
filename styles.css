@@ -17,8 +17,8 @@ header {
     position: static;
     top: 0;
     padding: 20px;
-    background: #ffffff;
-    color: #ff0000;
+    background: #00ffa4;
+    color: #ff00e7;
     z-index: 100;
 }
 
@@ -90,18 +90,17 @@ header {
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Auto-adjust columns */
-    gap: 30px; /* Space between cards */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-flow: dense;
+    gap: 30px;
     padding: 20px;
 }
 
 .content-item {
     background-color: rgb(255, 255, 255);
     border: 5px double #000000;
-    /*border-radius: 8px;*/
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Animation for hover effect */
 }
 
 .content-item-professional-experience {
@@ -110,6 +109,11 @@ header {
 
 .floppy {
     text-align: center;
+}
+
+.floppy img {
+    height: 250px;
+    width: 250px;
 }
 
 .floppy img:hover {
@@ -162,7 +166,6 @@ header {
 
     .content-grid {
         grid-template-columns: 1fr; /* Single column on very small screens */
-        gap: 8px; /* Smaller gap to save space */
         padding: 10px; /* Smaller padding */
     }
 
@@ -170,3 +173,26 @@ header {
         padding: 12px; /* Adjust padding to fit small screens */
     }
 }
+
+@media (max-width: 355px) {
+    header {
+        font-size: 20px;
+        text-shadow: 1px 1px black;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+
+    .floppy img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .avatar-img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
