@@ -121,7 +121,6 @@ header {
 .floppy img {
     height: 250px;
     width: 250px;
-    filter: invert(14%) sepia(6%) saturate(6889%) hue-rotate(319deg) brightness(97%) contrast(83%);
 }
 
 .floppy img:hover {
