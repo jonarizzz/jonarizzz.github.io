@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <title>Test grid</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Женя и Таня — Свадьба</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <div>Header</div>
-    </br>
-    <div>Timer</div>
-    </br>
-    <div>Time and Place</div>
-    </br>
-    <div>Dress code</div>
-    </br>
-    <div>Presents</div>
-    </br>
-    <div>Questionary</div>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Женя и Таня</h1>
+    </div>
+  </div>
 
+  <div class="content">
+    <section>
+      <h2>Дорогие гости!</h2>
+      <p>Приглашаем вас разделить с нами важный и радостный день — нашу свадьбу!</p>
+    </section>
 
+    <section>
+      <h2>Дата</h2>
+      <p>13.08.2025</p>
+    </section>
+
+    <section>
+      <h2>Место проведения</h2>
+      <p>Усадьба "Охотник У Дуба", Новоселье, Минская область 223030, Беларусь</p>
+      <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section>
+      <h2>Расписание</h2>
+      <ul>
+        <li>15:00 — Сбор гостей</li>
+        <li>16:00 — Церемония</li>
+        <li>17:30 — Ужин и веселье</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Дресс-код</h2>
+      <p>Элегантный стиль в светлых тонах</p>
+    </section>
+
+    <section>
+      <a class="calendar-button" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR...">
+        Добавить в календарь
+      </a>
+    </section>
+
+    <section>
+      <div class="countdown" id="countdown"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</html>
