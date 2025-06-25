@@ -68,6 +68,30 @@ body {
   min-height: 100vh;
 }
 
+/* Каждая секция с декоративным разделением */
+.paper-section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.paper-section:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+.paper-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'SectionHeadersFont', 'Georgia', serif;
+  font-size: 2rem;
+  color: #444;
+}
+
 /* Анимация */
 @keyframes slideIn {
   from {
@@ -109,7 +133,7 @@ body {
   }
 
   .paper {
-    min-height: 1123px;
+    min-height: 300px;
   }
 }
 
@@ -123,7 +147,14 @@ body {
 
 @font-face {
   font-family: 'DateFont';
-  src: url('fonts/font7.otf') format('opentype');
+  src: url('fonts/Date.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SectionHeadersFont';
+  src: url('fonts/font2.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
