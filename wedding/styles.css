@@ -70,18 +70,19 @@ body {
   min-height: 100vh;
 }
 
-/* Каждая секция с декоративным разделением */
 .paper-section {
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   position: relative;
   font-family: 'SectionTextFont', 'Georgia', serif;
-  /* font-size: 2rem; */
+  font-size: 1.3rem;
   color: #444;
 }
 
-.paper-section:not(:first-child)::before {
-  content: "";
-  display: block;
+.paper-section p {
+  line-height: 1.8;
+}
+
+.divider {
   width: 60px;
   height: 3px;
   background-color: #ccc;
