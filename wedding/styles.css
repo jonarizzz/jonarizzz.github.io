@@ -1,3 +1,4 @@
+/* Базовые стили */
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +7,53 @@
 
 body {
   height: 100%;
-  font-family: 'Georgia', serif;
   color: #333;
-  background-image: url('Picture2.jpeg');
+  background-image: url('BackgroundImage.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Заставка */
+/* Заглавный экран */
 .hero {
+  position: relative;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h1 {
+  font-family: 'NamesFont', 'Georgia', serif;
   font-size: 4rem;
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  z-index: 2;
 }
 
-/* Бумага */
+.hero .date {
+  position: absolute;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  letter-spacing: 1px;
+  z-index: 2;
+  font-family: 'NamesFont', 'Georgia', serif;
+}
+
+/* Контентный блок */
 .paper {
   background-color: white;
   margin: 4rem auto;
@@ -37,6 +62,9 @@ body {
   animation: slideIn 1s ease forwards;
   will-change: transform, opacity;
   border-radius: 12px;
+  width: 90%;
+  max-width: 794px;
+  min-height: 100vh;
 }
 
 /* Анимация */
@@ -51,19 +79,42 @@ body {
   }
 }
 
-/* Медиа-запросы */
+/* 📱 Телефоны */
 @media (max-width: 600px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero .date {
+    font-size: 1.2rem;
+  }
+
   .paper {
-    width: 100%;
-    min-height: 100vh;
     border-radius: 0;
     margin: 0;
+    width: 100%;
   }
 }
 
+/* 💻 Планшеты и десктоп */
 @media (min-width: 601px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero .date {
+    font-size: 1.5rem;
+  }
+
   .paper {
-    width: 794px;
     min-height: 1123px;
   }
+}
+
+/* Шрифт */
+@font-face {
+  font-family: 'NamesFont';
+  src: url('fonts/font3.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
