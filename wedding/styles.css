@@ -1,26 +1,21 @@
-/* Базовые стили */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body {
   height: 100%;
   font-family: 'Georgia', serif;
   color: #333;
-}
-
-body {
   background-image: url('Picture2.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Заставка с фоном */
+/* Заставка */
 .hero {
-  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -30,19 +25,21 @@ body {
 .hero h1 {
   font-size: 4rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-/* Белый блок */
+/* Бумага */
 .paper {
   background-color: white;
-  margin: 0 auto;
+  margin: 4rem auto;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease forwards;
+  will-change: transform, opacity;
+  border-radius: 12px;
 }
 
-/* Анимация наезда */
+/* Анимация */
 @keyframes slideIn {
   from {
     transform: translateY(100px);
@@ -54,27 +51,19 @@ body {
   }
 }
 
-/* 📱 Телефон */
+/* Медиа-запросы */
 @media (max-width: 600px) {
   .paper {
     width: 100%;
     min-height: 100vh;
+    border-radius: 0;
+    margin: 0;
   }
 }
 
-/* 💻 Стандартный монитор */
-@media (min-width: 601px) and (max-width: 1600px) {
-  .paper {
-    width: 794px; /* A4 по ширине */
-    min-height: 1123px; /* A4 по высоте */
-  }
-}
-
-/* 🖥️ Большой монитор */
-@media (min-width: 1601px) {
+@media (min-width: 601px) {
   .paper {
     width: 794px;
     min-height: 1123px;
-    max-width: 794px;
   }
 }
