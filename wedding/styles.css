@@ -35,7 +35,9 @@ body {
   font-family: 'NamesFont', 'Georgia', serif;
   font-size: 4rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+   text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -72,6 +74,9 @@ body {
 .paper-section {
   padding: 2rem 0;
   position: relative;
+  font-family: 'SectionTextFont', 'Georgia', serif;
+  /* font-size: 2rem; */
+  color: #444;
 }
 
 .paper-section:not(:first-child)::before {
@@ -87,10 +92,11 @@ body {
 .paper-section h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-family: 'SectionHeadersFont', 'Georgia', serif;
+  font-family: 'SectionHeaderFont', 'Georgia', serif;
   font-size: 2rem;
   color: #444;
 }
+
 
 /* Анимация */
 @keyframes slideIn {
@@ -153,7 +159,14 @@ body {
 }
 
 @font-face {
-  font-family: 'SectionHeadersFont';
+  font-family: 'SectionHeaderFont';
+  src: url('fonts/Date.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SectionTextFont';
   src: url('fonts/font2.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
