@@ -167,7 +167,7 @@ body {
 
 @font-face {
   font-family: 'SectionTextFont';
-  src: url('fonts/font2.otf') format('opentype');
+  src: url('fonts/SectionText.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
