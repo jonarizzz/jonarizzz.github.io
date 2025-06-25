@@ -51,6 +51,7 @@ body {
   letter-spacing: 1px;
   z-index: 2;
   font-family: 'DateFont', 'Georgia', serif;
+  transition: opacity 0.5s ease;
 }
 
 /* Контентный блок */
