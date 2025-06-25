@@ -41,16 +41,16 @@ body {
 
 .hero .date {
   position: absolute;
-  top: 85vh;
+  top: 90vh;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: white;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   font-weight: 300;
   letter-spacing: 1px;
   z-index: 2;
-  font-family: 'NamesFont', 'Georgia', serif;
+  font-family: 'DateFont', 'Georgia', serif;
 }
 
 /* Контентный блок */
@@ -86,7 +86,8 @@ body {
   }
 
   .hero .date {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    top: 80vh;
   }
 
   .paper {
@@ -103,7 +104,7 @@ body {
   }
 
   .hero .date {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .paper {
@@ -114,7 +115,14 @@ body {
 /* Шрифт */
 @font-face {
   font-family: 'NamesFont';
-  src: url('fonts/font3.ttf') format('opentype');
+  src: url('fonts/Names.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DateFont';
+  src: url('fonts/font7.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
