@@ -8,10 +8,13 @@
 body {
   height: 100%;
   color: #333;
-  background-image: url('media/BackgroundImage.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('media/BackgroundImage.jpeg') center center / cover no-repeat;
+  z-index: -1;
 }
 
 /* Заглавный экран */
