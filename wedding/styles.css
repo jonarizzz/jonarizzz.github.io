@@ -8,7 +8,7 @@
 body {
   height: 100%;
   color: #333;
-  background-image: url('BackgroundImage.jpeg');
+  background-image: url('media/BackgroundImage.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -82,17 +82,28 @@ body {
   line-height: 1.8;
 }
 
+.wish-list {
+  line-height: 1.8;
+}
+
+.paper-section img {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 1rem auto;
+}
+
 .divider {
   width: 100%;
   height: 20px; 
-  background: url('divider2.png') no-repeat center;
+  background: url('media/divider2.png') no-repeat center;
   background-size: contain;
   margin: 50px 0 50px 0; /* отступ сверху */
 }
 
 .paper-section h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-family: 'SectionHeaderFont', 'Georgia', serif;
   font-size: 2rem;
   color: #444;
@@ -110,7 +121,7 @@ body {
 }
 
 .grid-invisible div,
-.grid-invisible button {
+button {
   background: none;
   border: none;
   padding: 1rem 0;
@@ -118,11 +129,7 @@ body {
   cursor: pointer;
 }
 
-/* .grid-invisible button:hover {
-  text-decoration: underline;
-} */
-
-.grid-invisible button {
+button {
   /* background: linear-gradient(0deg, #435a72, #b3d9ff);  */
   color: black;
   border: 1px solid black;
@@ -130,22 +137,26 @@ body {
   padding: 0.75rem 1rem; 
   font: inherit;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  */
   width: 100%; 
   max-width: 200px; 
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.grid-invisible button:hover {
+button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
 }
 
-.grid-invisible button:active {
+button:active {
   transform: translateY(0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.contacts-button-div {
+  display: flex;
+  justify-content: center;
+}
 
 /* Анимация */
 @keyframes slideIn {
@@ -194,6 +205,12 @@ body {
   }
   .grid-invisible > button.calendar-button {
     grid-row: 4;
+  }
+
+  .paper-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
   }
 }
 
