@@ -3,7 +3,7 @@
     <title>Azaronak&#x27;s Blog</title>
     <link href="https://www.azaronak.com/feed.xml" rel="self" />
     <link href="https://www.azaronak.com" />
-    <updated>2025-10-22T14:02:57+02:00</updated>
+    <updated>2025-10-22T14:03:59+02:00</updated>
     <author>
         <name>Yauheni Azaronak</name>
     </author>
@@ -22,12 +22,14 @@
         <updated>2025-10-22T14:01:03+02:00</updated>
             <summary>
                 <![CDATA[
-                    Нарисовал тут андроида-лешего на основе идеи Тёмы. Запись таймлапса из Procreate:
+                    <p>Нарисовал тут андроида-лешего на основе идеи Тёмы.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p>Нарисовал тут андроида-лешего на основе идеи Тёмы.</p>
+
 <figure class="post__image"><img loading="lazy"  src="https://www.azaronak.com/media/posts/10/photo_2025-10-22-13.30.09.jpeg" alt="" width="1173" height="1280" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-xs.jpeg 640w ,https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-sm.jpeg 768w ,https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-md.jpeg 1024w ,https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-lg.jpeg 1366w ,https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-xl.jpeg 1600w ,https://www.azaronak.com/media/posts/10/responsive/photo_2025-10-22-13.30.09-2xl.jpeg 1920w"></figure>
 <figure>Запись таймлапса из Procreate:</figure>
 <figure class="post__video"><iframe loading="lazy" width="697" height="391" style="width: 697px; height: 391px;" src="https://www.youtube.com/embed/bt7StvGYgUo" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
