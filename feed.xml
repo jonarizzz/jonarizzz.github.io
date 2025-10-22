@@ -3,7 +3,7 @@
     <title>Azaronak&#x27;s Blog</title>
     <link href="https://www.azaronak.com/feed.xml" rel="self" />
     <link href="https://www.azaronak.com" />
-    <updated>2025-10-22T14:01:03+02:00</updated>
+    <updated>2025-10-22T14:02:57+02:00</updated>
     <author>
         <name>Yauheni Azaronak</name>
     </author>
@@ -17,6 +17,7 @@
         <link href="https://www.azaronak.com/leshiy.html"/>
         <id>https://www.azaronak.com/leshiy.html</id>
             <category term="Personal"/>
+            <category term="Drawing"/>
 
         <updated>2025-10-22T14:01:03+02:00</updated>
             <summary>
@@ -40,6 +41,7 @@
         </author>
         <link href="https://www.azaronak.com/vlog-iz-slovakii.html"/>
         <id>https://www.azaronak.com/vlog-iz-slovakii.html</id>
+            <category term="Travel"/>
             <category term="Personal"/>
 
         <updated>2025-10-08T14:02:57+02:00</updated>
