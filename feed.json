@@ -11,6 +11,22 @@
     },
     "items": [
         {
+            "id": "https://www.azaronak.com/vlog-iz-tuluzy.html",
+            "url": "https://www.azaronak.com/vlog-iz-tuluzy.html",
+            "title": "Влог из Тулузы",
+            "summary": "Этой весной Я, Танюшка и Илюшка скатались в Тулузу посмотреть город и авиационный музей \"Aeroscopia\" при заводе AirBus. Представляю вашему вниманию наш видеоотчёт из поездки.",
+            "content_html": "<p>Этой весной Я, Танюшка и Илюшка скатались в Тулузу посмотреть город и авиационный музей \"<a href=\"https://www.aeroscopia.fr/en\" target=\"_blank\" rel=\"noopener noreferrer\">Aeroscopia</a>\" при заводе AirBus. Представляю вашему вниманию наш видеоотчёт из поездки. </p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"701\" height=\"393\" style=\"width: 701px; height: 393px;\" src=\"https://www.youtube.com/embed/uGP5PKqHVts?si=0TKHVeWrP01W8iAb\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p> </p>",
+            "author": {
+                "name": "Yauheni Azaronak"
+            },
+            "tags": [
+                   "Путешествия",
+                   "Личное"
+            ],
+            "date_published": "2025-10-22T14:38:49+02:00",
+            "date_modified": "2025-10-22T18:54:27+02:00"
+        },
+        {
             "id": "https://www.azaronak.com/leshiy.html",
             "url": "https://www.azaronak.com/leshiy.html",
             "title": "Леший",
@@ -20,8 +36,8 @@
                 "name": "Yauheni Azaronak"
             },
             "tags": [
-                   "Personal",
-                   "Drawing"
+                   "Рисование",
+                   "Личное"
             ],
             "date_published": "2025-10-22T14:01:03+02:00",
             "date_modified": "2025-10-22T15:04:35+02:00"
@@ -36,8 +52,8 @@
                 "name": "Yauheni Azaronak"
             },
             "tags": [
-                   "Travel",
-                   "Personal"
+                   "Путешествия",
+                   "Личное"
             ],
             "date_published": "2025-10-08T14:02:57+02:00",
             "date_modified": "2025-10-22T14:02:57+02:00"
@@ -52,7 +68,7 @@
                 "name": "Yauheni Azaronak"
             },
             "tags": [
-                   "Programming"
+                   "Программирование"
             ],
             "date_published": "2025-10-05T19:53:43+02:00",
             "date_modified": "2025-10-06T13:15:42+02:00"
@@ -67,7 +83,7 @@
                 "name": "Yauheni Azaronak"
             },
             "tags": [
-                   "Personal"
+                   "Личное"
             ],
             "date_published": "2025-10-05T19:41:43+02:00",
             "date_modified": "2025-10-06T13:02:29+02:00"
