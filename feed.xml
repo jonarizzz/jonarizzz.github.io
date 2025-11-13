@@ -3,12 +3,38 @@
     <title>Azaronak&#x27;s Blog</title>
     <link href="https://www.azaronak.com/feed.xml" rel="self" />
     <link href="https://www.azaronak.com" />
-    <updated>2025-11-06T03:01:19+01:00</updated>
+    <updated>2025-11-13T21:08:42+01:00</updated>
     <author>
         <name>Yauheni Azaronak</name>
     </author>
     <id>https://www.azaronak.com</id>
 
+    <entry>
+        <title>Видеоотчёт с Хэллоуина</title>
+        <author>
+            <name>Yauheni Azaronak</name>
+        </author>
+        <link href="https://www.azaronak.com/videootchyot-s-hellouina.html"/>
+        <id>https://www.azaronak.com/videootchyot-s-hellouina.html</id>
+        <media:content url="https://www.azaronak.com/media/posts/14/IMG_5579.jpeg" medium="image" />
+            <category term="Личное"/>
+
+        <updated>2025-11-13T21:05:03+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.azaronak.com/media/posts/14/IMG_5579.jpeg" alt="" />
+                    Мы решили впервые в жизни собраться и отметить Хэллоуин. Событие сие было задокументировано на камеру, смонтировано и выложено на YouTube. Приятного просмотра! Монтаж делался в Final Cut Pro, который мы взяли на пробу. Качество получилось лучше, чем у пердыдущих роликов, но с памятью мы намучились&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://www.azaronak.com/media/posts/14/IMG_5579.jpeg" class="type:primaryImage" alt="" /></p>
+                <p>Мы решили впервые в жизни собраться и отметить Хэллоуин. Событие сие было задокументировано на камеру, смонтировано и выложено на YouTube. Приятного просмотра!</p>
+<figure class="post__video"><iframe loading="lazy" width="691" height="384" style="width: 691px; height: 384px;" src="https://www.youtube.com/embed/qYXFr8A2DDg" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<p>Монтаж делался в Final Cut Pro, который мы взяли на пробу. Качество получилось лучше, чем у пердыдущих роликов, но с памятью мы намучились знатно. Если бы можно было посоветовать что-нибудь себе из прошлого, то Я рекомендовал бы разобраться с тонкостю импорта, фоновым рендерингом и прокси-медиа перед тем, как начинать монтаж, иначе есть риск потерять сделанную работу. </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Комментарии открыты!</title>
         <author>
@@ -73,61 +99,7 @@
 }</code></pre>
 <p>Вуаля! Симпатичная секция комментов! Но это ещё не всё. В тёмном режиме текст почему-то остаётся чёрным. В попытке поменять его вручную Я сломал рендер Publii и пришлось восстанавливаться из бэкапа. </p>
 <figure class="post__image"><img loading="lazy"  src="https://www.azaronak.com/media/posts/13/Snimok-ekrana-2025-10-26-v-18.50.12.png" alt="" width="1798" height="938" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-xs.png 640w ,https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-sm.png 768w ,https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-md.png 1024w ,https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-lg.png 1366w ,https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-xl.png 1600w ,https://www.azaronak.com/media/posts/13/responsive/Snimok-ekrana-2025-10-26-v-18.50.12-2xl.png 1920w"></figure>
-<p>Как это чинится? Я, честно признаться, так и не разобрался. Судя по всему тема Publii и плагин Cusdis по-разному понимают адаптивность цвета. Методом научного тыка с чатом GPT Я сделал следующий фикс:</p>
-<p>Заходим в Tools &amp; Plugins –&gt; Custom HTML –&gt; Footer, вставляем:</p>
-<pre class="language-html"><code>&lt;script&gt;
-document.addEventListener('DOMContentLoaded', function () {
-
-  function getSystemTheme() {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
-  }
-
-  function rerenderCusdis() {
-    const el = document.getElementById('cusdis_thread');
-    if (!el) return;
-
-    // Устанавливаем тему на контейнер (это ключевое)
-    el.setAttribute('data-theme', getSystemTheme());
-
-    // Если скрипт Cusdis загружен — перерисовываем
-    if (window.CUSDISWidget &amp;&amp; window.CUSDISWidget.render) {
-      window.CUSDISWidget.render();
-    }
-  }
-
-  // Первичная инициализация
-  rerenderCusdis();
-
-  // Если система переключает тему (macOS/Windows/iOS/Android)
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', rerenderCusdis);
-});
-&lt;/script&gt;</code></pre>
-<p>После чего в Custom CSS добавляем:</p>
-<pre class="language-css"><code>/* Темная тема Cusdis */
-#cusdis_thread[data-theme="dark"] {
-  --cusdis-bg: transparent; /* или заменим на твой фон */
-  --cusdis-font-color: #ffffff;
-  --cusdis-color: #ffffff;
-  --cusdis-subcolor: #aaaaaa;
-  --cusdis-input-bg: rgba(255, 255, 255, 0.08);
-  --cusdis-input-border: rgba(255, 255, 255, 0.25);
-  color-scheme: dark;
-}
-
-/* Светлая тема — чтобы не ломать внешний вид */
-#cusdis_thread[data-theme="light"] {
-  --cusdis-bg: #ffffff;
-  --cusdis-font-color: #000000;
-  --cusdis-color: #000000;
-  --cusdis-subcolor: #666666;
-  --cusdis-input-bg: #ffffff;
-  --cusdis-input-border: #cccccc;
-  color-scheme: light;
-}
-</code></pre>
-<p>И вроде как готово. </p>
+<p>Как это чинится? Пока что бъюсь головой о стену пытаясь решить. </p>
             ]]>
         </content>
     </entry>
