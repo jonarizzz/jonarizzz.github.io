@@ -10,21 +10,20 @@
 
 header {
     font-family: 'HeaderFont';
-    /* font-size: 70px; */
-    font-size: xx-large;
+    font-size: 4em;
 }
 
 .menu-header {
     font-family: 'HeaderFont';
-    font-size: x-large;
-    /* font-size: 30px; */
+    font-size: 2em;
 }
 
 .menu-item {
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: 1.3em;
 }
 
 .post {
     font-family: 'Courier New', Courier, monospace;
+    font-size:1.3em;
 }
