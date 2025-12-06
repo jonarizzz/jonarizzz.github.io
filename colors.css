@@ -1,14 +1,4 @@
-header {
-    background: #ffc907;
-    color: #c62027;
-    border: 10px double #c62027;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
+html {
     /* background-color: rgb(254, 193, 118); */
     background-size: cover; 
     background:
@@ -20,6 +10,16 @@ body {
       conic-gradient(from 60deg at calc(200%/3) 50%,#8bb394  60deg,#abc9b1 0 120deg,#0000 0),
       conic-gradient(from -60deg at 50% calc(100%/3),#8bb394 120deg,#72ab9d 0 240deg,#abc9b1 0);
     background-size: 104px 60px;
+}
+
+header {
+    background: #ffc907;
+    color: #c62027;
+    border: 10px double #c62027;
+}
+
+a {
+    text-decoration: none;
 }
 
 .avatar {
