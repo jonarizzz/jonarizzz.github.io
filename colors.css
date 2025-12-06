@@ -1,0 +1,55 @@
+header {
+    background: #ffc907;
+    color: #c62027;
+    border: 10px double #c62027;
+}
+
+a {
+    text-decoration: none;
+}
+
+.parent {
+    /* background-color: rgb(254, 193, 118); */
+    background-size: cover; 
+    background:
+      conic-gradient(from 0deg at calc(500%/6) calc(100%/3),#abc9b1 0 120deg,#0000 0),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),#72ab9d 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(100%/3) calc(500%/6),#8bb394 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(200%/3) calc(500%/6),#8bb394 0 120deg,#0000 0),
+      conic-gradient(from -180deg at calc(100%/3) 50%,#72ab9d  60deg,#8bb394 0 120deg,#0000 0),
+      conic-gradient(from 60deg at calc(200%/3) 50%,#8bb394  60deg,#abc9b1 0 120deg,#0000 0),
+      conic-gradient(from -60deg at 50% calc(100%/3),#8bb394 120deg,#72ab9d 0 240deg,#abc9b1 0);
+    background-size: 104px 60px;
+}
+
+.avatar {
+    border: 15px ridge #a4722d;
+}
+
+.menu-header {
+    color:c62027;
+    background-color: #ffc906;
+    border: 3px solid #c62027;
+}
+
+.menu-item {
+    color: #000000;
+    background-color: #fff9df;
+    border: 2px solid #000000;
+}
+
+.unavailable {
+    background-color: #9b2828;
+}
+
+.contact-item {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+}
+
+.post {
+    color: #000000;
+    background-color: #fff9df;
+    border: 1px solid #ffd186;
+}

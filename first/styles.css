@@ -1,6 +1,6 @@
 @font-face {
     font-family: CustomHeaderFont;
-    src: url('media/fonts/Natasha.ttf');
+    src: url('../media/fonts/Natasha.ttf');
 }
 
 body {

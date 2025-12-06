@@ -1,482 +1,171 @@
-<!DOCTYPE html>
-<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-
-    <title>Azaronak Yauheni's personal website</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Azaronak Yauheni's personal website">
-
-    <link rel="icon" type="image/x-icon" href="media/favicon/letters/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cube.css">
+    <title>Азарёнок Евгений</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
+
+
 <body>
 
-<header>
-    Azaronak Yauheni
-</header>
+    <header>
+        Азарёнок Евгений
+    </header>
 
+    <div class="parent">
+        
+        <div class="content">
+            
+            <div class="left-panel">
 
+                <div class="avatar-container">
+                    <img src="media/pictures/avatar.jpeg" alt="Yauheni Azaronak" class="avatar" />
+                </div>
 
-<!-- TODO: If the screen is wider than 2000 px then items in 'content' should stick to the center (like VK) -->
+                <div class="menu-header"> Основное:</div>
 
-<!-- TODO: Favicon not visible in bookmarks -->
-<!-- TODO: Meta-info for fast review -->
-<!-- TODO: Language change button -->
-<!-- TODO: Automatic age and experience counter -->
-<!-- TODO: Separate large pieces into different files -->
-<!-- TODO: Tabs on top of the page -->
-<!-- TODO: "Advertisement" tab with the stuff I use and do (and a banner saying this is not really an advertisement) -->
-<!-- TODO: Make 3D item work on mobile (?) -->
-<!-- TODO: Scaling on very big screens -->
-<!-- TODO: Visitors counter (?) -->
-
-<div class="container">
-    <div class="side-panel">
-        <div style="text-align: center">
-            <img src="media/pictures/avatar.jpeg" alt="Yauheni Azaronak" class="avatar-img" />
-        </div>
-
-        <br/>
-
-        <div class="side-grid">
-
-            <!-- Icons pack is taken from here: https://www.iconfinder.com/iconsets/social-icons-33 -->
-            <!-- LiveLib icon is taken from the AppStore page -->
-
-            <a href="https://t.me/Azaratos" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/telegram.svg" alt="Telegram logo"/>
-                </div>
-            </a>
-            <a href="mailto:azaronak.eugene@gmail.com">
-                <div class="side-item">
-                    <img src="media/logos/google.svg" alt="Google logo"/>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/yauheni-azaronak-222426160/" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/linkedin.svg" style="width: 35px; height: 35px;" alt="Linkedin logo"/>
-                </div>
-            </a>
-            <a href="https://github.com/jonarizzz" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/github.svg" alt="Github logo"/>
-                </div>
-            </a>
-            <!-- <a href="https://join.skype.com/invite/pv0bVdj0Ua4h" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/skype.svg" alt="Skype logo"/>
-                </div>
-            </a> -->
-            <a href="https://www.pinterest.com/euginiy/" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/pinterest.svg" alt="Pinterest logo"/>
-                </div>
-            </a>
-            <a href="https://open.spotify.com/user/085k2swiu7x83arati65if6ss?si=cfa2fc93b7ed41dc" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/spotify.svg" alt="Spotify logo"/>
-                </div>
-            </a>
-            <a href="https://stackoverflow.com/users/11125505/jonarizzz" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/stack-overflow.svg" alt="Stack Overflow logo"/>
-                </div>
-            </a>
-            <a href="https://vk.com/azaratos" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/vk.svg" alt="VK logo"/>
-                </div>
-            </a>
-            <a href="https://www.livelib.ru/reader/EuginiyAzarenok" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/livelib.webp" style="border-radius: 20%" alt="Livelib logo"/>
-                </div>
-            </a>
-            <a href="https://wa.me/375447724304" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/whatapp.svg" alt="Whatsapp logo"/>
-                </div>
-            </a>
-            <a href="viber://chat?number=%2B375447724304" target="_blank">
-                <div class="side-item">
-                    <img src="media/logos/viber.svg" alt="Viber logo"/>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="content-panel">
-        <div class="content-grid">
-            <div class="content-item">
-                <h1>About me</h1>
-                <p>Azaronak Yauheni</p>
-                <p>Szczecin, 26 y.o.</p>
-                <p>Software Engineer</p>
-                <p>6+ years of development experience</p>
-                <p>Computer Science bachelor degree, wide open to new technologies</p>
-                <p>Wide range of design and programming competencies</p>
-                <p>Strong technical and analytical skills</p>
-                <p>Excellent written and verbal communication skills and work ethics</p>
-
-                <p>
-                    Experienced Software Engineer with 6+ years of hands-on development experience, strong 
-                    analytical skills, and a solid Computer Science background. Proven ability to deliver 
-                    scalable, cloud-native systems in high-load environments.
-                </p>
-                <p>
-                    Strong expertise in backend development using Java (8–17), Spring Boot, and 
-                    relational/non-relational databases.
-                </p>
-                <p>
-                    Extensive experience working on infrastructure modernization, architecture upgrades, 
-                    and migration initiatives in large distributed teams.
-                </p>
-                <p>
-                    Hands-on experience with Kubernetes, Docker, AWS, Terraform, and CI/CD automation.
-                </p>
-                <p>
-                    Proven track record of delivering critical projects in EdTech, Retail, Cybersecurity, 
-                    and FinTech domains.
-                </p>
-                <p>
-                    Skilled in microservices architecture, cloud deployments, system design, and 
-                    performance optimization.
-                </p>
-                <p>
-                    Demonstrated success in mentoring team members, participating in architectural 
-                    decisions, and improving legacy systems.
-                </p>
-                <p>Adept at working with cross-functional teams, integrating third-party systems, and 
-                    aligning technical solutions with business goals.
-                </p>
-                <p>
-                    Currently contributing as a Senior Software Developer at McGraw-Hill, driving 
-                    modernization and infrastructure upgrade initiatives across global platforms.
-                </p>
-            </div>
-            <div class="content-item">
-                <h1>Resume</h1>
-                <div class="floppy">
-                    <a href="media/documents/CV.pdf" download="AzaronakYauheni.pdf" >
-                        <img src="media/favicon/floppy/android-chrome-512x512.png" alt="Floppy disc"/>
+                <div class="menu">
+                    <div class="menu-item unavailable">
+                        <b> Обо мне </b>
+                    </div>
+                    <div class="menu-item unavailable"> 
+                        <b> Рисунки </b>
+                    </div>
+                    <div class="menu-item unavailable">
+                        <b> Библиотека </b>
+                    </div>
+                    <div class="menu-item unavailable">
+                        <b> Музыка </b>
+                    </div>
+                    <a href="media/documents/CV.pdf" target="_blank">
+                        <div class="menu-item">
+                            <b> Профессиональное резюме </b>
+                        </div>
                     </a>
                 </div>
 
+                <div class="menu-header">Контакты:</div>
 
-                <br/>
-                <p>Download my resume in PDF format by clicking the button!</p>
-            </div>
-            <div class="content-item content-item-professional-experience">
-                <h1>Professional experience</h1>
+                <div class="contacts-grid">
 
-                <br/>
-                <h2>McGraw Hill</h2>
-                January 2023 - Present time <br/>
-                Industry: EdTech <br/>
-                <br/>
-
-                <p>
-                    Project name: Atlas <br/>
-                    Project description: Establishing robust, reusable infrastructure and platform services as the backbone for all product teams, accelerating delivery and ensuring system consistency. <br/>
-                    Overall team size: 25 persons <br/>
-                    Role: Principle Software Developer <br/>
-                </p>
-                <p>
-                    Responsibilities: Collaborate with product teams to identify common patterns and abstract 
-                    reusable solutions into platform components. Design and implement company-wide infrastructure 
-                    to serve as a scalable foundation for all product teams and services. Ensure infrastructure 
-                    scalability, availability, and resilience through automation, containerization, and 
-                    infrastructure-as-code. Continuously evaluate new technologies and tools, advocating for 
-                    improvements that benefit the engineering organization as a whole.    
-                </p>
-                <p>
-                    Challenges: Designed and implemented a synthetic, portable database with supporting tooling 
-                    to enable consistent, automated testing across teams and environments, significantly improving 
-                    test reliability and developer efficiency. Developed and delivered a series of security patches 
-                    for legacy and modern applications, addressing critical vulnerabilities and strengthening the 
-                    overall security posture of the platform.
-                </p>
-                <p>
-                    Technology stack: MySQL (5.7, 8), Flyway, K8S, AWS, Git, Github Actions, Terraform, PHP
-                </p>
-                <br/>
-
-                <p>
-                    Project name: Next Generation<br/>
-                    Project description: Upgrading the company’s critical infrastructure and services to the modern
-                    technology stack.<br/>
-                    Overall team size: 20 persons<br/>
-                    Role: Senior Software Developer<br/>
-                </p>
-                <p>
-                    Responsibilities: Architecture upgrades planning, software dependencies research, version
-                    upgrade, documentation and support, code refactoring, infra refactoring.
-                </p>
-                <p>
-                    Challenges: Developing an automatic data migration mechanism based on Flyway and K8S,
-                    developing a mechanism for automatic data synchronization between systems of diﬀerent
-                    generations, versions upgrades of dependencies and systems throughout the company, code
-                    refactoring of huge old services.
-                </p>
-                <p>
-                    Technology stack: Java (8, 11, 17), Python 3, MySQL (5.7, 8), Flyway, K8S, AWS, Git, Github
-                    Actions, Terraform, PHP
-                </p>
-                <br/>
-
-                <p>
-                    Project name: Professional Learning Services <br/>
-                    Project description: Educational service for teachers <br/>
-                    Overall team size: 7 persons <br/>
-                    Role: Key Software Developer <br/>
-                </p>
-                <p>
-                    Responsibilities: Architecture planning, microservices development, infrastructural development,
-                    database engeneering, security handling, integrating services with third-party data providers, new
-                    team member mentoring, documentation writing.
-                </p>
-                <p>
-                    Challenges: Developing an infrastructure based on Docker, K8S, AWS and Terraform, Creating a
-                    user-api and security for it integrated into the American student progress accounting system,
-                    Integrating into the external content management system, Unit-integration-functional-load testing
-                    implementation.
-                </p>
-                <p>
-                    Technology stack: Java 17 + Spring (Boot, Security, Data), Maven, Lombok, MapStruct, AWS
-                    SDK, Swagger API, MySQL 8, Flyway, Redis (for cache), Kafka (for statistics), DataDog (for logs),
-                    Git, Github Actions, Docker, K8S, AWS, Terraform
-                </p>
-                
-
-                <br/>
-                <br/>
-                <h2>Nike</h2>
-                February 2021 - January 2023 <br/>
-                Industry: Retail <br/>
-                <br/>
-
-                <p>
-                    Project name: Dragonfly <br/>
-                    Project description: Set of data flow systems between physical and internet Nike stores. <br/>
-                    Overall team size: 4 persons <br/>
-                    Role: Senior Software Developer <br/>
-                </p>
-                <p>
-                    Responsibilities: Development of the new microservices and functions, creating CI/CD pipelines,
-                    participating in architecture discussions and implementing new design solutions, refactoring the
-                    existing services and functions, new team member mentoring.
-                </p>
-                <p>
-                    Challenges: Separating monolith service into several microservices and creating an AWS
-                    infrastructure for them, designing and implementing a number of scheduled functions to reduce
-                    the load on the services.
-                </p>
-                <p>
-                    Technology stack: Java 17, Spring Boot, Hibernate, Relational databases (Oracle, PostgreSQL,
-                    AuroraDB, MySQL), Docker, Kubernates, Jenkins, Confluence, CD/CI, Git, AWS.
-                </p>
-
-                <br/>
-                <br/>
-                <h2>Telegram trade bot (side project)</h2> <br/>
-                February 2020 - December 2020 <br/>
-                Industry: Trading <br/>
-                GitHub: <a href="https://github.com/Trade4LifeGit" target="_blank">Trading Bot</a>
-                <br/>
-
-                <p>
-                    Project name: PS4 Trade Bot. <br/>
-                    Project description: Open-source non-commercial automated Telegram-based bot for trading
-                    videogames between gamers. <br/>
-                    Overall team size: 3 persons. <br/>
-                    Role: Key Software Developer. <br/>
-                </p>
-                <p>
-                    Responsibilities: Product management, key microservices development, refactoring and support,
-                    database planning and development, reverse-engineering of the datasources, infrastructure
-                    development.
-                </p>
-                <p>
-                    Challenges: CD/CI development from scratch, development of the codebase based on the
-                    Telegram API, reverse-engineering of the third-party datasource.
-                </p>
-                <p>
-                    Technology stack: Java 11, Spring Boot, Hibernate, AWS, NodeJS, GitHub Actions, MongoDB,
-                    JHipster, Swagger, Docker, CD/CI, Git.
-                </p>
-
-                <br/>
-                <br/>
-                <h2>Firedome / Svaps systems</h2> <br/>
-                December 2019 - February 2021 <br/>
-                Industry: Internet of things, Cybersecurity <br/>
-                <br/>
-
-                <p>
-                    Project name: Firedome
-                    Project description: Cybersecurity platform for smart devices.
-                    Overall team size: 15 persons
-                    Role: Middle Software Developer
-                </p>
-                <p>
-                    Responsibilities: New features implementation, bug fixing, solution presentation, design of the
-                    new business processes, development of the new Microservices, documentation writing, demo
-                    meetings, code review, knowledge transferring to new team members, analysing logs and
-                    performance improvements, data migration, improving CD/CI processes, automation tests
-                    development.
-                </p>
-                <p>
-                    Challenges: Elasticsearch migration between incompatible versions, Development of versioning
-                    mechanism, Development of the new Microservices from scratch.
-                </p>
-                <p>
-                    Technology stack: Java 11, Spring Boot, Hibernate, Google Cloud Platform, Google Pub/Sub,
-                    BigQuery, ReactJS, Python 3, MongoDB, JHipster, Docker, Kubernates, Jenkins, Firebase, JST,
-                    CD/CI, Git.
-                </p>
-
-
-                <br/>
-                <br/>
-                <h2>IBA group</h2> <br/>
-                December 2018 - December 2019 <br/>
-                Industry: FinTech, Taxes <br/>
-                <br/>
-
-                <p>
-                    Project name: Belarusian Tax Ministry
-                    Project description: Developing and support of the Belarussian Tax Ministry software.
-                    Overall team size: 20+ persons
-                    Role: Junior Software Developer
-                </p>
-                <p>
-                    Responsibilities: Bug fixing, incident investigation, performance improvement and analysis, data
-                    migration; SCRUM processes as usual. Communication with customers, demo meetings.
-                </p>
-                <p>
-                    Challenges: Researched and fixed several out of memory crashes on the prod environment.
-                </p>
-                <p>
-                    Technology stack: Java 8, SQL Server, JSP, Maven, Eclipse memory analyser, SVN
-                </p>
-
-            </div>
-            <div class="content-item">
-                <h1>Education and training</h1>
-                <p><b>2015 - 2019</b></p>
-                <p>Belarusian National Technical University, Minsk</p>
-                <p>Engineering-Pedagogical Faculty (Informatics)</p>
-                <br/>
-                <p><b>2017 - 2018</b></p>
-                <p>EPAM training center, Java Web Development</p>
-                <p>JavaRush online courses</p>
-            </div>
-            <div class="content-item">
-                <h1>Secret project</h1>
-                <br/>
-                <div class="cube-container">
-                    <div class="cube">
-                        <div class="cube-face front">
-                            <img src="./media/logos/question.svg" class="question" alt="Question mark">
+                    <a href="mailto:azaronak.eugene@gmail.com">
+                        <div class="contact-item">
+                            <img src="media/logos/email.svg" alt="Email logo"/>
                         </div>
-                        <div class="cube-face back"></div>
-                        <div class="cube-face left"></div>
-                        <div class="cube-face right"></div>
-                        <div class="cube-face top"></div>
-                        <div class="cube-face bottom"></div>
+                    </a>
+
+                    <a href="https://github.com/jonarizzz" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/github.svg" alt="Github logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/Azaratos" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/telegram.svg" alt="Telegram logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/375447724304" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/whatapp.svg" alt="Whatsapp logo"/>
+                        </div>
+                    </a>
+
+                    <a href="viber://chat?number=%2B375447724304" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/viber.svg" alt="Viber logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.livelib.ru/reader/EuginiyAzarenok" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/livelib.webp" style="border-radius: 20%" alt="Livelib logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.pinterest.com/euginiy/" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/pinterest.svg" alt="Pinterest logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/user/085k2swiu7x83arati65if6ss?si=cfa2fc93b7ed41dc" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/spotify.svg" alt="Spotify logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://stackoverflow.com/users/11125505/jonarizzz" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/stack-overflow.svg" alt="Stack Overflow logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/azaratos" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/vk.svg" alt="VK logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.deviantart.com/jonarizzz" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/deviantart.svg" alt="Deviantart logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://bere.al/azaratos" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/bereal.svg" alt="BeReal logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/@Azaronak" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/youtube.svg" alt="YouTube logo"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yauheni-azaronak-222426160/" target="_blank">
+                        <div class="contact-item">
+                            <img src="media/logos/linkedin.svg" alt="Linkedin logo"/>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="menu-header">Разное:</div>
+
+                <div class="menu">
+                    <div class="menu-item unavailable">
+                        <b> Мой сетап </b>
+                    </div>
+                    <div class="menu-item unavailable">
+                        <b> Интересные ссылки </b>
+                    </div>
+                    <div class="menu-item unavailable">
+                        <b> Секретный проект </b>
                     </div>
                 </div>
             </div>
-            <div class="content-item">
-                <h1>Skill summary</h1>
-                <p>
-                <b>Programming skills:</b>
-                <ul>
-                    <li>Java 11+</li>
-                    <li>Spring Boot</li>
-                    <li>Spring MVC</li>
-                    <li>Spring Data</li>
-                    <li>Spring Security</li>
-                    <li>Hibernate</li>
-                    <li>Test Containers</li>
-                    <li>Mockito</li>
-                    <li>Swagger</li>
-                    <li>JHipster</li>
-                    <li>JavaScript ES6</li>
-                    <li>Python 3</li>
-                    <li>Confident in Algorithms</li>
-                </ul>
-                <p>
-                <b>Web Technologies:</b>
-                <ul>
-                    <li>REST</li>
-                    <li>SOAP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>ReactJS</li>
-                    <li>MVC</li>
-                    <li>Oauth2.0</li>
-                    <li>JWT</li>
-                    <li>Firebase</li>
-                    <li>Auth0</li>
-                </ul>
-                <p>
-                <b>Cloud technologies:</b>
-                <ul>
-                    <li>AWS</li>
-                    <li>Google Cloud Platform</li>
-                    <li>MS Azure</li>
-                </ul>
-                <p>
-                <b>Databases:</b>
-                <ul>
-                    <li>SQL Server</li>
-                    <li>Oracle SQL</li>
-                    <li>Google Big Query SQL</li>
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Elasticsearch</li>
-                    <li>Flyway</li>
-                    <li>Redis</li>
-                    <li>RabbitMQ</li>
-                </ul>
-                <p>
-                <b>Infrastructure:</b>
-                <ul>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Terraform</li>
-                    <li>Github Actions</li>
-                    <li>Jenkins</li>
-                </ul>
-                <p>
-                <b>Other skills:</b>
-                <ul>
-                    <li>Git</li>
-                    <li>SSH</li>
-                    <li>Programming best-practises</li>
-                    <li>Design patterns</li>
-                    <li>Bases of high math</li>
-                    <li>UNIX-based systems</li>
-                </ul>
-                <p>
-                <b>Languages:</b>
-                <ul>
-                    <li>Russian - native</li>
-                    <li>English - fluent</li>
-                    <li>Polish – pre-intermediate</li>
-                </ul>
+
+
+            <div class="right-panel">
+
+                <div class="menu-header">Последнее написанное:</div>
+
+                <!-- here goes future posts -->
+
+                <a href="posts/amature-webcoding/index.html">
+                    <div class="post"> Почему этот сайт такой всратый? </div>
+                </a>
+
             </div>
+
         </div>
     </div>
-</div>
-
-<script src="3d-object-animation.js"></script>
+    
+    
 
 </body>
-</html>

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: HeaderFont;
+    src: url('../media/fonts/Natasha.ttf');
+}
+
+@font-face {
+    font-family: TextFont;
+    src: url('../media/fonts/Spectral-Regular.ttf');
+}
+
+header {
+    font-family: 'HeaderFont';
+    font-size: 70px;
+}
+
+.menu-header {
+    font-family: 'HeaderFont';
+    font-size: 30px;
+}
+
+.menu-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.post {
+    font-family: 'Courier New', Courier, monospace;
+}

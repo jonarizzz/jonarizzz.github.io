@@ -1,0 +1,14 @@
+.contact-item:hover {
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+
+.menu-item:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+}
+
+.post:hover {
+    transition: transform 0.2s;
+    transform: scale(1.04);
+}

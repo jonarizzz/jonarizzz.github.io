@@ -1,0 +1,46 @@
+body {
+    background: rgb(71, 121, 71);
+    font-family: sans-serif;
+}
+
+.card {
+    width: 260px;
+    margin: 20px;
+    padding: 10px;
+    background: rgb(255, 252, 204);
+    cursor: pointer;
+    position: relative;
+    box-shadow: 10px;
+}
+
+.card-header {
+    padding: 10px;
+}
+
+.unfold-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* folded state */
+.unfold {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: rgb(255, 252, 204);
+    padding: 10px;
+    box-sizing: border-box;
+    transform-origin: top;
+    transform: perspective(50px) rotateX(-80deg);
+    transition: 0.2s ease;
+}
+
+/* open state */
+.unfold.active {
+    height: var(--open-height);
+    opacity: 1;
+    transform: perspective(200px) rotateX(0deg);
+}
