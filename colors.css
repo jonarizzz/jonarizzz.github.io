@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-.parent {
+body {
     /* background-color: rgb(254, 193, 118); */
     background-size: cover; 
     background:
