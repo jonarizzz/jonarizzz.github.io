@@ -1,0 +1,33 @@
+body {
+  padding: 25px;
+}
+
+.page {
+  max-width: 900px; /* максимальная ширина блока */
+  margin: 0 auto;    /* центрирование горизонтально */
+  padding: 20px;
+}
+
+.page h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.tabulated-paragraph {
+  padding-left: 40px;
+}
+
+.image {
+  max-height:100%; 
+  max-width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
