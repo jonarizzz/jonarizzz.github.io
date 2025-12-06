@@ -1,7 +1,6 @@
 header {
     text-align: center;
     position: static;
-    top: 0;
     padding: 25px 10px 10px;
 }
 
@@ -87,10 +86,12 @@ header {
     }
 
     .left-panel {
+        max-width: 100%;
         margin: 0 auto;    /* центрирование горизонтально */
     }
 
     .right-panel {
+        max-width: 100%;
         margin: 0 auto;    /* центрирование горизонтально */
     }
 

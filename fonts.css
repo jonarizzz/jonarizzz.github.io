@@ -1,21 +1,23 @@
 @font-face {
     font-family: HeaderFont;
-    src: url('../media/fonts/Natasha.ttf');
+    src: url('media/fonts/Natasha.ttf');
 }
 
 @font-face {
     font-family: TextFont;
-    src: url('../media/fonts/Spectral-Regular.ttf');
+    src: url('media/fonts/Spectral-Regular.ttf');
 }
 
 header {
     font-family: 'HeaderFont';
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: xx-large;
 }
 
 .menu-header {
     font-family: 'HeaderFont';
-    font-size: 30px;
+    font-size: x-large;
+    /* font-size: 30px; */
 }
 
 .menu-item {
