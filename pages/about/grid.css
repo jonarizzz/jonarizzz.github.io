@@ -1,0 +1,43 @@
+body {
+  padding: 25px;
+  font-family: sans-serif;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page h1 {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    display: block;
+  }
+
+  .left-panel, .right-panel {
+    max-width: 100%;
+    margin: 0 auto 20px; /* spacing between panels */
+  }
+}

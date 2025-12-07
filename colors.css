@@ -27,13 +27,13 @@ a {
 }
 
 .menu-header {
-    color:c62027;
+    color:#c62027;
     background-color: #ffc906;
     border: 3px solid #c62027;
 }
 
 .menu-item {
-    color: #000000;
+    color: black;
     background-color: #fff9df;
     border: 2px solid #000000;
 }
@@ -43,7 +43,6 @@ a {
 }
 
 .contact-item {
-    color: #000000;
     background-color: rgb(255, 255, 255);
     border: 2px solid #000000;
 }
