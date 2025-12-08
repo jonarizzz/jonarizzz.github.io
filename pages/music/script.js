@@ -30,7 +30,7 @@
 
         var displayIndex = function (imgSize, spacing, left, imgs, index, flat, width, labelBox) {
 
-            var mLeft = (width - imgSize) * .5 - spacing * (index + 1) - imgSize * .5;
+            var mLeft = (width - imgSize) * 0.5 - spacing * (index + 1) - imgSize * 0.5;
 
             for (var i = 0; i <= index; ++i) {
                 imgs[i].style.left = (left + i * spacing + spacing) + "px";
@@ -42,12 +42,12 @@
                     flat ? 0 : ((index - i) * 10 + 45),
                     300,
                     flat ? -(index - i) * 10 : (-(index - i) * 30 - 20),
-                    0.8 // <--- scale down
-                );            
+                    0.8
+                );
             }
 
             imgs[index].style["-webkit-filter"] = "none";
-            imgs[index].style.marginLeft = (mLeft + imgSize * .5) + "px";
+            imgs[index].style.marginLeft = (mLeft + imgSize * 0.5) + "px";
             imgs[index].style.zIndex = imgs.length;
 
             // Show label under the selected album
@@ -71,14 +71,14 @@
                     flat ? 0 : ((index - i) * 10 - 45),
                     300,
                     flat ? (index - i) * 10 : ((index - i) * 30 - 20),
-                    0.8 // <--- side scaling
+                    0.8
                 );
             }
         };
 
         var coverflowScroll = function (imgSize, spacing, c, imgs, flat, labelBox) {
             var width = parseInt(c.style.width);
-            var p = 1. * c.scrollLeft / width;
+            var p = 1.0 * c.scrollLeft / width;
             var index = Math.min(Math.floor(p * imgs.length), imgs.length - 1);
             var left = c.scrollLeft;
             c.dataset.index = index;
@@ -89,7 +89,6 @@
 
             var imgSize = parseInt(c.dataset.size) || 64,
                 spacing = parseInt(c.dataset.spacing) || 10,
-                // shadow = (c.dataset.shadow == "true") || false,
                 imgShadow = !((c.dataset.imgshadow == "false") || false),
                 bgColor = c.dataset.bgcolor || "transparent",
                 flat = (c.dataset.flat == "true") || false,
@@ -130,11 +129,49 @@
             else
                 c.style.width = (width ? width : (imgSize + (imgs.length + 1) * spacing)) + "px";
 
-
             c.style.height = (imgHeight + 80) + "px";
             c.style.position = "relative";
             c.dataset.index = index ? parseInt(index) : 0;
 
+            // --- DRAG TO SCROLL ---
+            let isDragging = false;
+            let startX;
+            let scrollStart;
+
+            c.onmousedown = function(e) {
+                isDragging = true;
+                startX = e.pageX - c.offsetLeft;
+                scrollStart = c.scrollLeft;
+                c.style.cursor = 'grabbing';
+                e.preventDefault();
+            };
+
+            c.onmouseup = function(e) {
+                isDragging = false;
+                c.style.cursor = 'grab';
+            };
+
+            c.onmouseleave = function(e) {
+                isDragging = false;
+                c.style.cursor = 'grab';
+            };
+
+            c.onmousemove = function(e) {
+                if (!isDragging) return;
+                const x = e.pageX - c.offsetLeft;
+                const walk = (startX - x);
+                c.scrollLeft = scrollStart + walk;
+                coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+            };
+
+            // --- MOUSE WHEEL HORIZONTAL SCROLL ---
+            c.onwheel = function(e) {
+                e.preventDefault();
+                c.scrollLeft += e.deltaY * 1.5; // adjust multiplier for speed
+                coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+            };
+
+            // --- scroll event for smooth animation ---
             c.onscroll = function () {
                 if (scrollTimeout) return;
                 scrollTimeout = requestAnimationFrame(() => {
@@ -143,6 +180,7 @@
                 });
             };
 
+            // click to select
             for (var i = 0; i < imgs.length; ++i)
                 imgs[i].onclick = function () {
                     displayIndex(imgSize, spacing, c.scrollLeft, imgs, imgs.indexOf(this), flat, parseInt(c.style.width), labelBox);
@@ -157,5 +195,5 @@
         for (var i = 0; i < coverflows.length; ++i)
             initCoverFlow(coverflows[i]);
     }
-    
+
 })();
