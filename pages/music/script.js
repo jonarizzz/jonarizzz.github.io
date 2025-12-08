@@ -45,8 +45,6 @@
             if (labelBox) {
                 labelBox.style.visibility = "visible";
                 labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.info || "");
-                labelBox.style.left = (left + index * spacing + spacing + 10) + "px";
-                labelBox.style.marginLeft = (mLeft + imgSize * .5) + "px";
             }
 
             // Update description card

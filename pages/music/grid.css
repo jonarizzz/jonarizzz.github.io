@@ -44,9 +44,12 @@ body {
 
 .coverflow-label-box {
   position: absolute;
-  bottom: 10px;
-  width: 180px;
+  left: 50%;
+  bottom: 20px;         /* or whatever vertical position you want */
+  transform: translateX(-50%);
+  white-space: nowrap;  /* prevents growing vertically */
   text-align: center;
+  pointer-events: none; /* optional */
 }
 
 .desc-card {
