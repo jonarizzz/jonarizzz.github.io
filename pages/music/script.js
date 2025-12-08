@@ -11,12 +11,9 @@
     window.onload = function () {
 
         var browserPrefix = "";
-
         if (navigator.userAgent.indexOf('Firefox') != -1) {
             browserPrefix = "-moz-";
-        } else if (navigator.userAgent.indexOf('Chrome') != -1) {
-            browserPrefix = "-webkit-";
-        } else if (navigator.userAgent.indexOf('Safari') != -1) {
+        } else if (navigator.userAgent.indexOf('Chrome') != -1 || navigator.userAgent.indexOf('Safari') != -1) {
             browserPrefix = "-webkit-";
         }
 
@@ -50,13 +47,11 @@
             imgs[index].style.marginLeft = (mLeft + imgSize * 0.5) + "px";
             imgs[index].style.zIndex = imgs.length;
 
-            // Show label under the selected album
             if (labelBox) {
                 labelBox.style.visibility = "visible";
                 labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.info || "");
             }
 
-            // Update description card
             updateDescCard(imgs[index].dataset.desc);
 
             setTransform3D(imgs[index], 0, 0, 5);
@@ -78,8 +73,8 @@
 
         var coverflowScroll = function (imgSize, spacing, c, imgs, flat, labelBox) {
             var width = parseInt(c.style.width);
-            var p = 1.0 * c.scrollLeft / width;
-            var index = Math.min(Math.floor(p * imgs.length), imgs.length - 1);
+            var p = c.scrollLeft / width;
+            var index = Math.min(Math.round(p * imgs.length), imgs.length - 1);
             var left = c.scrollLeft;
             c.dataset.index = index;
             displayIndex(imgSize, spacing, left, imgs, index, flat, width, labelBox);
@@ -95,8 +90,7 @@
                 width = c.dataset.width,
                 index = c.dataset.index,
                 imgHeight = 0,
-                imgs = [],
-                placeholding;
+                imgs = [];
 
             for (var i = 0; i < c.childNodes.length; ++i)
                 if (c.childNodes[i].tagName)
@@ -119,7 +113,8 @@
             var labelBox = document.getElementsByClassName("coverflow-label-box")[0];
 
             setTransform3D(c, 0, 600, 0);
-            placeholding = document.createElement("DIV");
+
+            var placeholding = document.createElement("DIV");
             placeholding.style.width = (width ? width * 2 : (imgSize + (imgs.length + 1) * spacing) * 2) + "px";
             placeholding.style.height = "1px";
             c.appendChild(placeholding);
@@ -127,71 +122,79 @@
             if (width)
                 c.style.width = width + "px";
             else
-                c.style.width = (width ? width : (imgSize + (imgs.length + 1) * spacing)) + "px";
+                c.style.width = (imgSize + (imgs.length + 1) * spacing) + "px";
 
             c.style.height = (imgHeight + 80) + "px";
             c.style.position = "relative";
             c.dataset.index = index ? parseInt(index) : 0;
 
-            // --- DRAG TO SCROLL ---
+            // --- DRAG & TOUCH TO SCROLL ---
             let isDragging = false;
-            let startX;
-            let scrollStart;
+            let startX, scrollStart;
 
-            c.onmousedown = function(e) {
+            const startDrag = (x) => {
                 isDragging = true;
-                startX = e.pageX - c.offsetLeft;
+                startX = x;
                 scrollStart = c.scrollLeft;
-                c.style.cursor = 'grabbing';
-                e.preventDefault();
             };
 
-            c.onmouseup = function(e) {
-                isDragging = false;
-                c.style.cursor = 'grab';
-            };
-
-            c.onmouseleave = function(e) {
-                isDragging = false;
-                c.style.cursor = 'grab';
-            };
-
-            c.onmousemove = function(e) {
+            const moveDrag = (x) => {
                 if (!isDragging) return;
-                const x = e.pageX - c.offsetLeft;
-                const walk = (startX - x);
+                const walk = startX - x;
                 c.scrollLeft = scrollStart + walk;
                 coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
             };
 
-            // --- MOUSE WHEEL HORIZONTAL SCROLL ---
-            c.onwheel = function(e) {
-                e.preventDefault();
-                c.scrollLeft += e.deltaY * 1.5; // adjust multiplier for speed
-                coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+            const endDrag = () => {
+                isDragging = false;
             };
 
-            // --- scroll event for smooth animation ---
-            c.onscroll = function () {
+            // Mouse
+            c.addEventListener("mousedown", (e) => {
+                startDrag(e.pageX - c.offsetLeft);
+                c.style.cursor = 'grabbing';
+            });
+            c.addEventListener("mousemove", (e) => moveDrag(e.pageX - c.offsetLeft));
+            c.addEventListener("mouseup", () => { endDrag(); c.style.cursor = 'grab'; });
+            c.addEventListener("mouseleave", () => { endDrag(); c.style.cursor = 'grab'; });
+
+            // Touch
+            c.addEventListener("touchstart", (e) => startDrag(e.touches[0].pageX - c.offsetLeft));
+            c.addEventListener("touchmove", (e) => { moveDrag(e.touches[0].pageX - c.offsetLeft); e.preventDefault(); });
+            c.addEventListener("touchend", endDrag);
+
+            // --- MOUSE WHEEL HORIZONTAL SCROLL ---
+            c.addEventListener("wheel", (e) => {
+                e.preventDefault();
+                c.scrollLeft += e.deltaY * 1.5;
+                coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+            });
+
+            // --- scroll event ---
+            c.addEventListener("scroll", () => {
                 if (scrollTimeout) return;
                 scrollTimeout = requestAnimationFrame(() => {
-                    coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+                    var delta = Math.abs(c.scrollLeft - (c.dataset.lastScroll || 0));
+                    if (delta > 1) {
+                        coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+                        c.dataset.lastScroll = c.scrollLeft;
+                    }
                     scrollTimeout = null;
                 });
-            };
+            });
 
             // click to select
-            for (var i = 0; i < imgs.length; ++i)
-                imgs[i].onclick = function () {
+            imgs.forEach(img => {
+                img.addEventListener("click", function () {
                     displayIndex(imgSize, spacing, c.scrollLeft, imgs, imgs.indexOf(this), flat, parseInt(c.style.width), labelBox);
-                }
+                });
+            });
 
             // Initial description and label
             displayIndex(imgSize, spacing, c.scrollLeft, imgs, +c.dataset.index, flat, parseInt(c.style.width), labelBox);
         };
 
         var coverflows = document.getElementsByClassName("coverflow");
-
         for (var i = 0; i < coverflows.length; ++i)
             initCoverFlow(coverflows[i]);
     }
