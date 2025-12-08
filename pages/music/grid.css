@@ -1,6 +1,5 @@
 body {
   padding: 25px;
-  font-family: sans-serif;
 }
 
 .page {
@@ -34,6 +33,16 @@ body {
   margin: 0 auto;
 }
 
+/* .coverflow {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  padding-top: 60px;
+} */
+
 .coverflow {
   margin: 0 auto;
   margin-top: 50px;
@@ -42,24 +51,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) !important;
   padding-top: 60px;
+
+  position: relative;        /* Needed */
+  overflow-y: hidden;        /* Prevent label moving vertically */
 }
 
 .coverflow-label-box {
   position: absolute;
   left: 50%;
-  bottom: 0;         /* or whatever vertical position you want */
-  transform: translateX(-50%);
-  white-space: nowrap;  /* prevents growing vertically */
   text-align: center;
-  pointer-events: none; /* optional */
+  transform: translateX(-50%);
+  margin-top: 350px;
 }
 
 .desc-card {
-  margin: 160px auto 0 auto;
+  margin: 200px auto 0 auto;
   max-width: 800px;
   padding: 20px 25px;
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 @media (max-width: 1000px) {

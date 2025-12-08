@@ -1,0 +1,23 @@
+[
+  {
+    "id": "order_in_decline",
+    "artist": "Sum 41",
+    "album": "Order in Decline",
+    "img": "media/Sum 41/Order in Decline.png",
+    "html": "<p><b>Review:</b> Energetic punk-rock album with classic Sum 41 vibes.</p>"
+  },
+  {
+    "id": "does_this_look_infected",
+    "artist": "Sum 41",
+    "album": "Does This Look Infected?",
+    "img": "media/Sum 41/Does This Look Infected.png",
+    "html": "<p>A classic, raw punk album with youthful energy.</p>"
+  },
+  {
+    "id": "viva_la_vida",
+    "artist": "Coldplay",
+    "album": "Viva La Vida",
+    "img": "media/Coldplay/Viva La Vida.png",
+    "html": "<p>My favorite Coldplay album. Energetic and dreamy.</p>"
+  }
+]

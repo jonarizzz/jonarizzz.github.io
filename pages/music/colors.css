@@ -29,19 +29,30 @@ a {
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* .coverflow {
-    border: 2px solid black;
+  border: 2px solid black;
 } */
 
 .coverflow-label-box {
-    color: black;
+  color: black;
 }
 
 .desc-card {
-    background: #ffffff;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Hide scroll */
+.coverflow {
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/Edge */
+}
+
+/* Hide scroll */
+.coverflow::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari */
 }

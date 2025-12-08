@@ -1,5 +1,7 @@
 (function () {
 
+    let scrollTimeout = null;
+
     // Updates the description card below
     function updateDescCard(text) {
         const card = document.getElementById("cover-desc-card");
@@ -115,11 +117,7 @@
             c.style.overflowX = "scroll";
             c.style.backgroundColor = bgColor;
 
-            // Label box under selected album
-            var labelBox = document.createElement("SPAN");
-            labelBox.className = "coverflow-label-box";
-            labelBox.style.visibility = "hidden";
-            c.appendChild(labelBox);
+            var labelBox = document.getElementsByClassName("coverflow-label-box")[0];
 
             setTransform3D(c, 0, 600, 0);
             placeholding = document.createElement("DIV");
@@ -138,7 +136,11 @@
             c.dataset.index = index ? parseInt(index) : 0;
 
             c.onscroll = function () {
-                coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+                if (scrollTimeout) return;
+                scrollTimeout = requestAnimationFrame(() => {
+                    coverflowScroll(imgSize, spacing, c, imgs, flat, labelBox);
+                    scrollTimeout = null;
+                });
             };
 
             for (var i = 0; i < imgs.length; ++i)
