@@ -18,11 +18,12 @@
             browserPrefix = "-webkit-";
         }
 
-        var setTransform3D = function (el, degree, perspective, z) {
+        var setTransform3D = function (el, degree, perspective, z, scale = 1) {
             degree = Math.max(Math.min(degree, 90), -90);
             z -= 5;
             el.style["-webkit-perspective"] = el.style["perspective"] = el.style["-moz-perspective"] = perspective + "px";
-            el.style["-webkit-transform"] = el.style["transform"] = "rotateY(" + degree + "deg) translateZ(" + z + "px)";
+            el.style["-webkit-transform"] = el.style["transform"] =
+                "rotateY(" + degree + "deg) translateZ(" + z + "px) scale(" + scale + ")";
         };
 
         var displayIndex = function (imgSize, spacing, left, imgs, index, flat, width, labelBox) {
@@ -34,7 +35,13 @@
                 imgs[i].style.marginLeft = mLeft + "px";
                 imgs[i].style["-webkit-filter"] = "brightness(0.65)";
                 imgs[i].style.zIndex = i + 1;
-                setTransform3D(imgs[i], flat ? 0 : ((index - i) * 10 + 45), 300, flat ? -(index - i) * 10 : (-(index - i) * 30 - 20));
+                setTransform3D(
+                    imgs[i],
+                    flat ? 0 : ((index - i) * 10 + 45),
+                    300,
+                    flat ? -(index - i) * 10 : (-(index - i) * 30 - 20),
+                    0.8 // <--- scale down
+                );            
             }
 
             imgs[index].style["-webkit-filter"] = "none";
@@ -57,7 +64,13 @@
                 imgs[i].style.marginLeft = (mLeft + imgSize) + "px";
                 imgs[i].style["-webkit-filter"] = "brightness(0.7)";
                 imgs[i].style.zIndex = imgs.length - i;
-                setTransform3D(imgs[i], flat ? 0 : ((index - i) * 10 - 45), 300, flat ? (index - i) * 10 : ((index - i) * 30 - 20));
+                setTransform3D(
+                    imgs[i],
+                    flat ? 0 : ((index - i) * 10 - 45),
+                    300,
+                    flat ? (index - i) * 10 : ((index - i) * 30 - 20),
+                    0.8 // <--- side scaling
+                );
             }
         };
 
@@ -74,7 +87,7 @@
 
             var imgSize = parseInt(c.dataset.size) || 64,
                 spacing = parseInt(c.dataset.spacing) || 10,
-                shadow = (c.dataset.shadow == "true") || false,
+                // shadow = (c.dataset.shadow == "true") || false,
                 imgShadow = !((c.dataset.imgshadow == "false") || false),
                 bgColor = c.dataset.bgcolor || "transparent",
                 flat = (c.dataset.flat == "true") || false,
@@ -93,7 +106,7 @@
                 imgs[i].style.width = imgSize + "px";
                 imgs[i].style.height = "auto";
                 imgs[i].style.bottom = "60px";
-                if (!shadow && imgShadow)
+                if (imgShadow)
                     imgs[i].style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.3)";
                 imgs[i].style["transition"] = browserPrefix + "transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
                 imgHeight = Math.max(imgHeight, imgs[i].getBoundingClientRect().height);
@@ -119,15 +132,8 @@
             else
                 c.style.width = (width ? width : (imgSize + (imgs.length + 1) * spacing)) + "px";
 
-            if (shadow) {
-                c.style.height = (imgHeight * 2 + 80) + "px";
-                c.style["-webkit-perspective-origin"] = c.style["perspective-origin"] = c.style["-moz-perspective-origin"] = "50% 25%";
-                for (var i = 0; i < imgs.length; ++i) {
-                    imgs[i].style.bottom = (20 + imgHeight) + "px";
-                    imgs[i].style["-webkit-box-reflect"] = "below 0 -webkit-gradient(linear, 30% 20%, 30% 100%, from(transparent), color-stop(0.3, transparent), to(rgba(0, 0, 0, 0.8)))";
-                }
-            } else c.style.height = (imgHeight + 80) + "px";
 
+            c.style.height = (imgHeight + 80) + "px";
             c.style.position = "relative";
             c.dataset.index = index ? parseInt(index) : 0;
 
