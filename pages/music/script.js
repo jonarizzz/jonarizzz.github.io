@@ -1,5 +1,21 @@
 (function () {
 
+    // Loading data dynamically from data.js (through dom)
+    window.addEventListener("DOMContentLoaded", () => {
+        const coverflow = document.querySelector(".coverflow");
+        if (coverflow && window.MUSIC_DATA) {
+            MUSIC_DATA.forEach(album => {
+                const img = document.createElement("img");
+                img.src = album.img;
+                img.draggable = false;
+                img.dataset.artist = album.artist;
+                img.dataset.info = album.info;
+                img.dataset.desc = album.desc;
+                coverflow.appendChild(img);
+            });
+        }
+    });
+
     let scrollTimeout = null;
 
     // Updates the description card below
