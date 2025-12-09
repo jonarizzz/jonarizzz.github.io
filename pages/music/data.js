@@ -7,7 +7,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/7pbhvtNUvp160w3qgtwCCg",
         "deezer" : "https://www.deezer.com/en/album/812402971",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_lCJ8Z1TmE6BYVclzaY4Xy832eqH3taBKE",
-        "review" : "Более самобытный, чем другие их альбомы. Больше нестройности, он как будто вырублен рубанком. Много интересных струнных.",
+        "review" : "Более самобытный, чем другие их альбомы. Больше нестройности, много эхо, он как будто вырублен рубанком.",
     },
     {
         "id" : 98,
@@ -157,10 +157,10 @@ window.MUSIC_DATA = [
         "artist":"Coldplay",
         "album":"Ghost Stories",
         "img":"media/Coldplay/Ghost Stories.png",
-        "spotify" : "https://open.spotify.com/show/4pzhz6aJBkFvWZhjioxZw2",
+        "spotify" : "https://open.spotify.com/album/2G4AUqfwxcV1UdQjm2ouYr",
         "deezer" : "https://www.deezer.com/en/album/8679369",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_luIeq_KT1ChXNVQJBL8PSu2HKQZnVU_Qg",
-        "review":"Резко отвергнутый мной после первого прослушивания из-за своей непохожести на другие альбом, который Я в итоге распробовал и искренне полюбил. Ночной и убаюкивающий. Под одну из его песен Танюшка шла к алатрю. Прослушивание за рулём крайне противопоказано.",
+        "review":"Резко отвергнутый мной после первого прослушивания из-за своей непохожести на другие альбом, который Я в итоге распробовал и искренне полюбил. Ночной и убаюкивающий. Под Sky Full of Stars Танюшка шла к алтарю. Прослушивание за рулём крайне противопоказано.",
     },
     {
         "id" : 5,
