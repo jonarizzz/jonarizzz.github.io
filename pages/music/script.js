@@ -10,7 +10,10 @@
                 img.draggable = false;
                 img.dataset.artist = album.artist;
                 img.dataset.album = album.album;
-                img.dataset.desc = album.desc;
+                img.dataset.review = album.review;
+                img.dataset.spotify = album.spotify;
+                img.dataset.deezer = album.deezer;
+                img.dataset.youtube = album.youtube;
                 coverflow.appendChild(img);
             });
         }
@@ -19,9 +22,33 @@
     let scrollTimeout = null;
 
     // Updates the description card below
-    function updateDescCard(text) {
-        const card = document.getElementById("cover-desc-card");
-        card.textContent = text || "No description available.";
+    function updateDescCard(spotify, deezer, youtube, review) {
+        const links = document.getElementById("desc-card-links");
+        const card = document.getElementById("desc-card-review");
+
+        // Erase the content so that "+=" will not go on top of each other on scroll
+        links.innerHTML = "";
+        card.innerHTML = "";
+
+        if (spotify != "undefined") {
+            links.innerHTML += "<a href='" + spotify + "' target='_blanc'><img src='../../media/logos/spotify.svg'></a>";
+        } 
+
+        if (deezer != "undefined") {
+            links.innerHTML += "<a href='" + deezer + "' target='_blanc'> <img src='../../media/logos/deezer.svg'> </a>";
+        } 
+
+        if (youtube != "undefined") {
+            links.innerHTML += "<a href='" + youtube + "' target='_blanc'><img src='../../media/logos/youtube-music.svg'></a>";
+        }
+
+        if (review != "undefined") {
+            card.innerHTML = review;
+        } else {
+            card.innerHTML = "Ревью в процессе...";
+        }
+
+        
     }
 
     window.onload = function () {
@@ -68,7 +95,7 @@
                 labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.album || "");
             }
 
-            updateDescCard(imgs[index].dataset.desc);
+            updateDescCard(imgs[index].dataset.spotify, imgs[index].dataset.deezer, imgs[index].dataset.youtube, imgs[index].dataset.review);
 
             setTransform3D(imgs[index], 0, 0, 5);
 

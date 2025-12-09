@@ -60,8 +60,17 @@ body {
   padding: 20px 25px;
 }
 
-@media (max-width: 1000px) {
+.desc-card-links {
+  text-align: center;
+}
 
+.desc-card-links img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+@media (max-width: 1000px) {
   .image {
     max-width: 80%;
   }

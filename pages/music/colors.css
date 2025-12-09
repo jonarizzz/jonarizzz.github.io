@@ -56,6 +56,11 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
+desc-card img {
+  background-color: #b072c2;
+  border: 2px solid black;
+}
+
 /* Hide scroll */
 .coverflow {
     scrollbar-width: none;       /* Firefox */
