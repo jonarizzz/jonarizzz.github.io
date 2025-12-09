@@ -9,7 +9,7 @@
                 img.src = album.img;
                 img.draggable = false;
                 img.dataset.artist = album.artist;
-                img.dataset.info = album.info;
+                img.dataset.album = album.album;
                 img.dataset.desc = album.desc;
                 coverflow.appendChild(img);
             });
@@ -65,7 +65,7 @@
 
             if (labelBox) {
                 labelBox.style.visibility = "visible";
-                labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.info || "");
+                labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.album || "");
             }
 
             updateDescCard(imgs[index].dataset.desc);
