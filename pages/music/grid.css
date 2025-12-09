@@ -33,15 +33,6 @@ body {
   margin: 0 auto;
 }
 
-/* .coverflow {
-  margin: 0 auto;
-  margin-top: 50px;
-  position: absolute !important;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-  padding-top: 60px;
-} */
 
 .coverflow {
   margin: 0 auto;
@@ -66,7 +57,7 @@ body {
 
 .desc-card {
   margin: 200px auto 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 20px 25px;
 }
 
