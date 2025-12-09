@@ -116,8 +116,15 @@
 
         var coverflowScroll = function (imgSize, spacing, c, imgs, flat, labelBox) {
             var width = parseInt(c.style.width);
-            var p = c.scrollLeft / width;
-            var index = Math.min(Math.round(p * imgs.length), imgs.length - 1);
+
+            // var p = c.scrollLeft / width;
+            // var index = Math.min(Math.round(p * imgs.length), imgs.length - 1);
+
+            // Slower scrolling, still in testing
+            var coverWidth = imgSize + spacing;
+            var index = Math.round(c.scrollLeft / coverWidth);
+            index = Math.max(0, Math.min(index, imgs.length - 1));
+
             var left = c.scrollLeft;
             c.dataset.index = index;
             displayIndex(imgSize, spacing, left, imgs, index, flat, width, labelBox);
