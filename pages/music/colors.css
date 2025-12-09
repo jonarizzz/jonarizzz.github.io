@@ -1,15 +1,23 @@
 html {
-  --s: 100px; /* control the size*/
-  --c1: #f8edd1;
-  --c2: #ca88d7;
-  --c3: #af79aa;
-  
-  --c:#0000 48%,var(--c1) 0 52%,#0000 0;
-  background:
-    linear-gradient(-45deg,var(--c)),linear-gradient( 45deg,var(--c)),
-    repeating-conic-gradient(from 45deg,var(--c2) 0 25%,var(--c3) 0 50%);
-  background-size: var(--s) var(--s);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 
 a {
   text-decoration: none;
@@ -21,7 +29,7 @@ a {
 }
 
 .page h1{
-  color: #937a9a;
+  color: #b072c2;
 }
 
 .framed {
@@ -33,9 +41,11 @@ body {
   margin: 0 auto;
 }
 
-/* .coverflow {
-  border: 2px solid black;
-} */
+.page {
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
 
 .coverflow-label-box {
   color: black;
