@@ -1,5 +1,29 @@
 window.MUSIC_DATA = [
     {
+        "id" : 99,
+        "artist" : "Portugal. The Man",
+        "album" : "SHISH",
+        "img" : "media/Portugal. The Man/Shish.jpg",
+    },
+    {
+        "id" : 98,
+        "artist" : "Portugal. The Man",
+        "album" : "Chris Black Changed My Life",
+        "img" : "media/Portugal. The Man/Chris Black Changed My Life.png",
+    },
+    {
+        "id" : 97,
+        "artist" : "Portugal. The Man",
+        "album" : "Woodstock",
+        "img" : "media/Portugal. The Man/Woodstock.jpg",
+    },
+    {
+        "id" : 96,
+        "artist" : "Portugal. The Man",
+        "album" : "Evil Friends",
+        "img" : "media/Portugal. The Man/Evil Friends.jpg",
+    },
+    {
         "id" : 95,
         "artist" : "MGMT",
         "album" : "Oracular Spectacular",
