@@ -4,6 +4,10 @@ window.MUSIC_DATA = [
         "artist" : "Portugal. The Man",
         "album" : "SHISH",
         "img" : "media/Portugal. The Man/Shish.jpg",
+        "spotify" : "https://open.spotify.com/album/7pbhvtNUvp160w3qgtwCCg",
+        "deezer" : "https://www.deezer.com/en/album/812402971",
+        "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_lCJ8Z1TmE6BYVclzaY4Xy832eqH3taBKE",
+        "review" : "Более самобытный, чем другие их альбомы. Больше нестройности, он как будто вырублен рубанком. Много интересных струнных.",
     },
     {
         "id" : 98,
