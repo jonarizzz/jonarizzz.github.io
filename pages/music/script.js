@@ -14,6 +14,7 @@
                 img.dataset.spotify = album.spotify;
                 img.dataset.deezer = album.deezer;
                 img.dataset.youtube = album.youtube;
+                img.dataset.wiki = album.wiki;
                 coverflow.appendChild(img);
             });
         }
@@ -22,7 +23,7 @@
     let scrollTimeout = null;
 
     // Updates the description card below
-    function updateDescCard(spotify, deezer, youtube, review) {
+    function updateDescCard(spotify, deezer, youtube, wiki, review) {
         const links = document.getElementById("desc-card-links");
         const card = document.getElementById("desc-card-review");
 
@@ -40,6 +41,10 @@
 
         if (youtube != "undefined") {
             links.innerHTML += "<a href='" + youtube + "' target='_blanc'><img src='../../media/logos/youtube-music.svg'></a>";
+        }
+
+        if (wiki != "undefined") {
+            links.innerHTML += "<a href='" + wiki + "' target='_blanc'><img src='../../media/logos/wikipedia.svg'></a>";
         }
 
         if (review != "undefined") {
@@ -95,7 +100,7 @@
                 labelBox.innerHTML = (imgs[index].dataset.artist || "") + "<br>" + (imgs[index].dataset.album || "");
             }
 
-            updateDescCard(imgs[index].dataset.spotify, imgs[index].dataset.deezer, imgs[index].dataset.youtube, imgs[index].dataset.review);
+            updateDescCard(imgs[index].dataset.spotify, imgs[index].dataset.deezer, imgs[index].dataset.youtube, imgs[index].dataset.wiki, imgs[index].dataset.review);
 
             setTransform3D(imgs[index], 0, 0, 5);
 
@@ -117,13 +122,8 @@
         var coverflowScroll = function (imgSize, spacing, c, imgs, flat, labelBox) {
             var width = parseInt(c.style.width);
 
-            // var p = c.scrollLeft / width;
-            // var index = Math.min(Math.round(p * imgs.length), imgs.length - 1);
-
-            // Slower scrolling, still in testing
-            var coverWidth = imgSize + spacing;
-            var index = Math.round(c.scrollLeft / coverWidth);
-            index = Math.max(0, Math.min(index, imgs.length - 1));
+            var p = c.scrollLeft / width;
+            var index = Math.min(Math.round(p * imgs.length), imgs.length - 1);
 
             var left = c.scrollLeft;
             c.dataset.index = index;

@@ -133,7 +133,17 @@ window.MUSIC_DATA = [
     {"artist":"Sum 41","album":"Order in Decline","img":"media/Sum 41/Order in Decline.png"},
     {"artist":"Sum 41","album":"Does This Look Infected?","img":"media/Sum 41/Does This Look Infected.png"},
     {"id": 10, "artist":"Sum 41","album":"All Killer No Filler","img":"media/Sum 41/All Killer No Filler.jpg"},
-    {"artist":"Sum 41","album":"13 Voices","img":"media/Sum 41/13 voices.jpg"},
+    {
+        "id" : 9,
+        "artist" : "Sum 41",
+        "album" : "13 Voices",
+        "img" : "media/Sum 41/13 voices.jpg",
+        "spotify" : "https://open.spotify.com/album/3eCvEIqh8lZzfQbXt9Zndb",
+        "deezer" : "https://www.deezer.com/en/album/13282001",
+        "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_kr-c7Wj1XQC1qrjVkCBQ3vYITc75oGdIY",
+        "wiki" : "https://ru.wikipedia.org/wiki/13_Voices",
+        "review" : "0 секунд на раскачку. Всё, с чем Sum 41 до этого момента экспериментировали здесь используется по математике. Солидный, плотно сбитый, цельный. Мой самый любимый из их репертуара. ",
+    },
     {
         "id" : 8,
         "artist" : "Coldplay",
