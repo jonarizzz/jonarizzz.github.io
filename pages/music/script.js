@@ -233,10 +233,19 @@
                 });
             });
 
-            // click to select
-            imgs.forEach(img => {
-                img.addEventListener("click", function () {
-                    displayIndex(imgSize, spacing, c.scrollLeft, imgs, imgs.indexOf(this), flat, parseInt(c.style.width), labelBox);
+            // click to select (global index)
+            imgs.forEach((img, i) => {
+                img.addEventListener("click", () => {
+                    c.dataset.index = i;
+
+                    // вычисляем scrollLeft для нужной позиции
+                    const width = parseInt(c.style.width);
+                    const targetScroll = (i / imgs.length) * width;
+
+                    c.scrollTo({
+                        left: targetScroll,
+                        behavior: "smooth"
+                    });
                 });
             });
 

@@ -7,6 +7,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/7pbhvtNUvp160w3qgtwCCg",
         "deezer" : "https://www.deezer.com/en/album/812402971",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_lCJ8Z1TmE6BYVclzaY4Xy832eqH3taBKE",
+        "wiki" : "https://en.wikipedia.org/wiki/Shish_(album)",
         "review" : "Более самобытный, чем другие их альбомы. Больше нестройности, много эхо, он как будто вырублен рубанком.",
     },
     {
