@@ -1,5 +1,57 @@
 window.MUSIC_DATA = [
     {
+        "id" : 107,
+        "artist" : "Foals",
+        "album" : "Holy Fire",
+        "img" : "media/Foals/Holy Fire.jpg",
+    },
+    {
+        "id" : 106,
+        "artist" : "Foals",
+        "album" : "Total Life Forever",
+        "img" : "media/Foals/Total Life Forever.jpg",
+    },
+    {
+        "id" : 105,
+        "artist" : "Foals",
+        "album" : "What Went Down",
+        "img" : "media/Foals/What Went Down.jpg",
+    },
+    {
+        "id" : 104,
+        "artist" : "Milky Chance",
+        "album" : "Trip Tape III",
+        "img" : "media/Milky Chance/Trip Tape III.webp",
+    },
+    {
+        "id" : 103,
+        "artist" : "Milky Chance",
+        "album" : "Trip Tape II",
+        "img" : "media/Milky Chance/Trip Tape II.jpg",
+        "spotify" : "https://open.spotify.com/album/3anT3sq943fma4yCM5FhvG",
+        "deezer" : "https://www.deezer.com/en/album/352452547",
+        "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_mSmgNj2cGl5klnGc1kL9L--XHDm29oq1w",
+        "review" : " Много раз переслушивал пока мы жили в Щецине. Приятный мягкий инди. Танцевальный. Много интересного звучания. ",
+    },
+    {
+        "id" : 102,
+        "artist" : "Milky Chance",
+        "album" : "Trip Tape I",
+        "img" : "media/Milky Chance/Trip Tape I.jpg",
+    },
+    {
+        "id" : 101,
+        "artist" : "Milky Chance",
+        "album" : "Mind the Moon",
+        "img" : "media/Milky Chance/Mind the Moon.jpg",
+    },
+    {
+        "id" : 100,
+        "artist" : "Milky Chance",
+        "album" : "Sadnecessary",
+        "img" : "media/Milky Chance/Sadnecessary.jpg",
+    },
+    {
         "id" : 99,
         "artist" : "Portugal. The Man",
         "album" : "SHISH",
