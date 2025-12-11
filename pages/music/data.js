@@ -232,7 +232,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/2G4AUqfwxcV1UdQjm2ouYr",
         "deezer" : "https://www.deezer.com/en/album/8679369",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_luIeq_KT1ChXNVQJBL8PSu2HKQZnVU_Qg",
-        "review":"Резко отвергнутый мной после первого прослушивания из-за своей непохожести на другие альбом, который Я в итоге распробовал и искренне полюбил. Ночной и убаюкивающий. Под Sky Full of Stars Танюшка шла к алтарю. Прослушивание за рулём крайне противопоказано.",
+        "review":"Резко отвергнутый мной после первого прослушивания из-за своей непохожести на другие альбом, который Я в итоге распробовал и искренне полюбил. Ночной. Под Sky Full of Stars Танюшка шла к алтарю. Прослушивание за рулём строго противопоказано.",
     },
     {
         "id" : 5,
@@ -242,7 +242,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/7sYd6KDHefklNf94RmND8g",
         "deezer" : "https://www.deezer.com/en/album/303627",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_l8oyImA-VMFiBhAD4HsrlOy7AAXYNdrp8",
-        "review" : "Мой самый любимый альбом Coldplay. Энергичный и мечтательный. Абсолютная классика.",
+        "review" : "Пожалуй, мой самый любимый альбом Coldplay.",
     },
     {
         "id" : 4,
@@ -252,7 +252,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/4E7bV0pzG0LciBSWTszra6",
         "deezer" : "https://www.deezer.com/en/album/300328",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_keCXNLV07ZwL19mpKynR-i8jUDdr_8H2s",
-        "review" : "Ритмичный, почти танцевальный (насколько это вообще возможно для Coldplay) альбом. Трекам нужно сравнительно меньше времени, чтобы раскачаться, а припевы вызывают физические мурашки. Абсолютная конфетка. Песня 'A Message' несколько лет стояла у меня на будильнике.",
+        "review" : "'A Message' несколько лет стояла у меня на будильнике.",
     },
     {
         "id" : 3,
@@ -262,7 +262,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/4E7bV0pzG0LciBSWTszra6",
         "deezer" : "https://www.deezer.com/en/album/300328",
         "youtube" : "https://www.youtube.com/playlist?list=PLZ9DoO2uX9wU6UFsWRnHBavSMp5dfz0kS",
-        "review" : "Шикарный. Необычный, нарушающий привычную математическую симметрию жанра, бодрый, но не слишком. Идеальный плейлист для загруженного дня.",
+        "review" : "",
     },
     {
         "id" : 2,
@@ -272,7 +272,7 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/6ZG5lRT77aJ3btmArcykra?si=UHL7Bin3T3uWDTK7gMSBtQ",
         "deezer" : "https://www.deezer.com/us/album/301663",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_mO6LoBQmkXq6ZPyLQ6snqEs_IBlmbZAao",
-        "review" : "Чудесный лирический альбом. Спокойный, но играющий на высоких нотах. Один из моих самых любимых.",
+        "review" : "",
     },
     {
         "id" : 1,
@@ -282,6 +282,6 @@ window.MUSIC_DATA = [
         "spotify" : "https://open.spotify.com/album/2R7iJz5uaHjLEVnMkloO18?si=ZXI3nbyMQVOeGz-spJrRkg",
         "deezer" : "https://www.deezer.com/en/album/7526706",
         "youtube" : "https://music.youtube.com/playlist?list=OLAK5uy_nOhLNbCFIoEH8QwB_uaej_EaJAktQKplA",
-        "review" : "Первый альбом в моей жизни, прослушанный целиком. Искренний и разнообразный. Из него ключом бьёт настоящая человеческая радость."
+        "review" : "Первый альбом, который был загружен когда-то на мой iPod и первый в моей жизни, прослушанный целиком. Искренний, звонкий."
     }
 ];

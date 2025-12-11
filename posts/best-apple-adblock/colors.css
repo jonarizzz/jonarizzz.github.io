@@ -1,0 +1,30 @@
+html {
+  --s: 60px; /* control the size*/
+  --c1: #51a03b;
+  --c2: #83f47b;
+  
+  --g1:conic-gradient(at 37.5% 87.5%,#0000 75%,var(--c1) 0);
+  --g2:conic-gradient(at 12.5% 62.5%,#0000 75%,var(--c2) 0);
+  background:
+    var(--g2) calc(  var(--s)/4) calc(  var(--s)/4),
+    var(--g2) calc(5*var(--s)/4) calc(5*var(--s)/4),
+    var(--g1),var(--g1) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  background-color: #fffdf4;
+  border: 1px solid #fff4e1;
+}
+
+.page h1{
+  color: black;
+}
+
+.framed {
+  border: 2px solid black;
+}
