@@ -26,6 +26,7 @@
 #lightbox-img {
     max-width: 90vw;
     max-height: 90vh;
+    border: 2px solid white;
     transform: scale(0.9);
     transition: transform .25s ease;
 }

@@ -8,7 +8,6 @@ h1 {
 }
 
 .page {
-  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -29,7 +28,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* centers items horizontally */
-    gap: 20px;               /* spacing */
+    gap: 40px;               /* spacing */
     padding: 20px;
 }
 
