@@ -1,0 +1,39 @@
+#lightbox {
+    position: fixed !important;
+    inset: 0 !important;
+    background: rgba(0,0,0,0.85);
+    display: none; /* default: hidden */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
+    z-index: 99999;
+}
+
+#lightbox.active {
+    display: flex !important;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#lightbox.closing {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* image animation */
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: scale(0.9);
+    transition: transform .25s ease;
+}
+
+#lightbox.active #lightbox-img {
+    transform: scale(1);
+}
+
+#lightbox.closing #lightbox-img {
+    transform: scale(0.9);
+}

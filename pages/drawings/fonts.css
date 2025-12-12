@@ -1,0 +1,19 @@
+@font-face {
+    font-family: HeaderFont;
+    src: url('../../media/fonts/Gothic60-Regular.otf');
+}
+
+@font-face {
+    font-family: TextFont;
+    src: url('../../media/fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+h1 {
+    font-family: 'HeaderFont';
+    font-size: 4em;
+}
+
+.section-title {
+    font-family: 'HeaderFont';
+    font-size: 1.3em;
+}
