@@ -105,5 +105,21 @@ header {
         max-width: 80%;
     }
 
+    .contacts-grid {
+        column-gap: 90px;
+        row-gap: 25px;
+        margin: 60px;
+    }
+
+    .contact-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-item img {
+        width: 80px; 
+        height: 80px;
+    }
+
 
 }

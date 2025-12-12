@@ -27,3 +27,22 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size:1.5em;
 }
+
+@media (max-width: 1000px) {
+    header {
+        font-size: 6em;
+    }
+
+    .menu-header {
+        font-size: 4em;
+    }
+
+    .menu-item {
+        font-size: 3em;
+    }
+
+    .post {
+        font-size: 3em;
+    }
+
+}

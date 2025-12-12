@@ -17,3 +17,14 @@ h1 {
     font-family: 'HeaderFont';
     font-size: 1.3em;
 }
+
+@media (max-width: 1000px) {
+
+    .page h1 {
+        font-size: 6em;
+    }
+
+    .content {
+        font-size: 3em;
+    }
+}

@@ -12,3 +12,14 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
 }
+
+@media (max-width: 1000px) {
+
+    .page h1 {
+        font-size: 6em;
+    }
+
+    .content {
+        font-size: 3em;
+    }
+}

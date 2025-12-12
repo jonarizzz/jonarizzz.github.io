@@ -20,7 +20,7 @@ h1 {
 .section-title {
     text-align: center;
     padding: 15px;
-    max-width: 200px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -32,9 +32,16 @@ h1 {
     padding: 20px;
 }
 
-
 .drawing {
     width: 260px;
     height: 260px;
     object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+
+    .page h1 {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
 }
