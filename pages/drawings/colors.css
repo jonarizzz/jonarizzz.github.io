@@ -1,7 +1,7 @@
 html {
   --s: 220px; /* control the size*/
-  --c1: #050047;
-  --c2: #0c006b;
+  --c1: #202020;
+  --c2: #323232;
   
   --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
   --_c:,#0000 75%,var(--c2) 0;
@@ -29,5 +29,5 @@ a {
 }
 
 .drawing {
-    border: 2px solid white;
+    border: 4px solid white;
 }
