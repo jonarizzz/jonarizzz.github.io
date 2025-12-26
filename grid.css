@@ -5,7 +5,9 @@ body {
 header {
     text-align: center;
     position: static;
-    padding: 25px 10px 10px;
+    padding: 25px 10px 25px 10px;
+    max-width: 1000px; /* максимальная ширина блока */
+    margin: 0 auto;    /* центрирование горизонтально */
 }
 
 .content {
@@ -37,8 +39,8 @@ header {
 }
 
 .menu-item {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
@@ -74,8 +76,8 @@ header {
 }
 
 .post {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
