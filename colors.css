@@ -33,9 +33,6 @@ a {
 
 
 @media (max-width: 1000px) {
-    header {
-        border: 10px solid rgb(0, 255, 0);
-    }
 
     .menu-header {
         border: 6px solid rgb(0, 255, 0);
