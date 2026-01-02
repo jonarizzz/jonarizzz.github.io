@@ -1,0 +1,22 @@
+html {
+    background-color: rgb(235, 235, 235);
+}
+
+header {
+    color: rgb(20, 20, 20);
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-header {
+    color: rgb(20, 20, 20);
+}
+
+.menu-item a {
+    color: rgb(122, 122, 122);
+}
+.menu-item a:hover {
+    color: rgb(80, 80, 80);
+}

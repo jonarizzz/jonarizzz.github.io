@@ -1,0 +1,24 @@
+body {
+  padding: 25px;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page h1 {
+  text-align: center;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.image {
+  max-height: 100%; 
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
