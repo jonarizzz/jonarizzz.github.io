@@ -3,21 +3,22 @@ body {
 }
 
 header {
-    text-align: center;
     position: static;
-    padding: 25px 10px 25px 10px;
-    max-width: 1000px; /* максимальная ширина блока */
+    padding-top: 25px;
+    padding-left: 10px;
+    max-width: 600px; /* максимальная ширина блока */
     margin: 0 auto;    /* центрирование горизонтально */
 }
 
 .content {
-    max-width: 1000px; /* максимальная ширина блока */
+    max-width: 600px; /* максимальная ширина блока */
     margin: 0 auto;    /* центрирование горизонтально */
     display: flex; /* Делает DIV-ы половинки */
 }
 
 .left-panel {
-    max-width: 500px; /* Половина от 1000 (максимальной ширины content) */
+    max-width: 300px;
+    padding: 10px;
     flex: 1; /* Делает DIV-ы половинки */
 }
 
@@ -25,67 +26,25 @@ header {
     text-align: center;
 }
 
-.avatar {
-    width: 400px;
-    height: 400px;
-    margin: 20px 20px 20px;
-}
-
 .menu-header {
     margin: 10px;
-    padding: 20px;
     padding-top: 25px;
-    text-align: center;
 }
 
 .menu-item {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
+    margin-left: 25px;
 }
-
-.contacts-grid {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(65px, 65px));
-    justify-content: center;
-    justify-items: center;
-    margin: 5px;
-}
-
-.contact-item {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-}
-
-.contact-item img {
-    width: 40px; 
-    height: 40px;
-}
-
 
 .right-panel {
-    max-width: 500px; /* Половина от 1000 (максимальной ширины content) */
+    max-width: 300px;
+    padding: 10px;
     flex: 1; /* Чтобы сделать DIV-ы половинки */
 }
 
-.post {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-}
 
-
-
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
     .content {
         display: block;
@@ -100,39 +59,5 @@ header {
         max-width: 100%;
         margin: 0 auto;    /* центрирование горизонтально */
     }
-
-    .avatar {
-        width: auto;
-        height: auto;
-        max-width: 80%;
-    }
-
-    .contacts-grid {
-        column-gap: 90px;
-        row-gap: 25px;
-        margin: 60px;
-    }
-
-    .contact-item {
-        width: 100px;
-        height: 100px;
-    }
-
-    .contact-item img {
-        width: 80px; 
-        height: 80px;
-    }
-
-
-    .post {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .menu-item {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
 
 }
