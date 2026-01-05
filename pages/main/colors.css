@@ -17,6 +17,7 @@ a {
 .menu-item a {
     color: rgb(122, 122, 122);
 }
+
 .menu-item a:hover {
     color: rgb(80, 80, 80);
 }

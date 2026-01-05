@@ -18,7 +18,6 @@ header {
 
 .left-panel {
     max-width: 300px;
-    padding: 10px;
     flex: 1; /* Делает DIV-ы половинки */
 }
 
@@ -35,7 +34,6 @@ header {
 
 .right-panel {
     max-width: 300px;
-    padding: 10px;
     flex: 1; /* Чтобы сделать DIV-ы половинки */
 }
 

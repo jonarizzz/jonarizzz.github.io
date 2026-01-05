@@ -1,26 +1,12 @@
-@font-face {
-    font-family: HeaderFont;
-    src: url('../../media/fonts/X\ Company\ Regular.otf');
+body {
+    font-family: "Inter", "Inter Fallback", system-ui, sans-serif;
 }
 
-.page h1 {
-    font-family: 'HeaderFont';
-    font-size: 5em;
+header {
+    font-size: 1.8rem;
 }
 
 .content {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
-}
-
-
-@media (max-width: 1000px) {
-
-    .page h1 {
-        font-size: 6em;
-    }
-
-    .content {
-        font-size: 3em;
-    }
+    font-size: 1rem;
+    line-height: 1.5;
 }

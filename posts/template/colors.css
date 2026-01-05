@@ -6,6 +6,18 @@ a {
   text-decoration: none;
 }
 
-.page h1{
+header{
   color: rgb(20, 20, 20);
+}
+
+.content {
+  color: rgb(55, 55, 55);
+}
+
+.content a {
+  color: rgb(122, 122, 122);
+}
+
+.content a:hover {
+  color: rgb(80, 80, 80);
 }
