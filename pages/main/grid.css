@@ -6,6 +6,7 @@ header {
     position: static;
     padding-top: 25px;
     padding-left: 10px;
+    padding-bottom: 10px;
     max-width: 600px; /* максимальная ширина блока */
     margin: 0 auto;    /* центрирование горизонтально */
 }
@@ -23,7 +24,8 @@ header {
 
 .menu-header {
     margin: 10px;
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .menu-item {
