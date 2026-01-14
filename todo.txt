@@ -1,0 +1,3 @@
+rem points to text sizes
+browser icon
+signature in svg

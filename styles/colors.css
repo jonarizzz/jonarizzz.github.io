@@ -1,0 +1,24 @@
+html {
+    background-color: rgb(235, 235, 235);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Text colors */
+
+.text-1 { color: rgb(20, 20, 20); }
+.text-2 { color: rgb(55, 55, 55); }
+.text-3 { color: rgb(80, 80, 80); }
+.text-4 { color: rgb(122, 122, 122); }
+
+
+/* Text hover colors */
+
+.hover-text-1:hover { color: rgb(20, 20, 20); }
+.hover-text-2:hover { color: rgb(55, 55, 55); }
+.hover-text-3:hover { color: rgb(80, 80, 80); }
+.hover-text-4:hover { color: rgb(122, 122, 122); }
+
