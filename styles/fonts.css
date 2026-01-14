@@ -1,0 +1,36 @@
+html {
+    /* Стандартный размер текста */
+    font-size: clamp(16px, 1.1vw, 18px);
+}
+
+body {
+    font-family: "Inter", "Inter Fallback", system-ui, sans-serif;
+}
+
+.font-size-1 { font-size: 1rem; }
+.font-size-2 { font-size: 1.3rem; }
+.font-size-3 { font-size: 1.8rem; }
+
+.line-height-1 { line-height: 1; }
+.line-height-2 { line-height: 1.5; }
+
+
+
+
+/*  */
+
+/* body {
+    font-family: "Inter", "Inter Fallback", system-ui, sans-serif;
+} */
+
+/* header {
+    font-size: 1.8rem;
+}
+
+.menu-header {
+    font-size: 1.3rem;
+}
+
+.menu-item {
+    font-size: 1rem;
+} */
