@@ -1,4 +1,107 @@
 body {
-    /* Отступ снизу для косфортного скролла */
+    /* Отступ снизу для комфортного скролла */
     margin-bottom: 100px;
+}
+
+
+header {
+    position: static;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.horisontally-centered {
+    margin: 0 auto;
+}
+
+.max-width {
+  max-width: 600px;
+}
+
+.two-dynamic-columns-parent {
+    display: flex; 
+}
+
+.dynamic-column {
+    max-width: 300px;
+    flex: 1; /* Делает DIV-ы половинки */
+}
+
+
+
+/* ===================== */
+/* == Main page items == */
+/* ===================== */
+
+.menu-header {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+
+
+
+
+/* ================ */
+/* == Page items == */
+/* ================ */
+
+.page-content-root {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+/* ====================== */
+/* == About page items == */
+/* ====================== */
+
+.personal-info-item {
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.personal-info-item-line {
+  top: 13px;
+  border-color: #a8a8a8;
+  border-top-width: 1px;
+  border-top-style: solid;
+  left: calc(var(--spacing) * 0);
+  width: 100%;
+  position: absolute;
+}
+
+.personal-info-item > div:not(.personal-info-item-line) {
+  background: rgb(235, 235, 235);      /* перекрывает линию */
+  padding: 0 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .two-dynamic-columns-parent {
+        display: block;
+    }
+
+    .dynamic-column {
+        max-width: 100%;
+        margin: 0 auto;    /* центрирование горизонтально */
+    }
+
 }
