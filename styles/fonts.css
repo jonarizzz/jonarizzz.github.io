@@ -1,9 +1,6 @@
 html {
     /* Стандартный размер текста */
     font-size: clamp(16px, 1.1vw, 18px);
-}
-
-body {
     font-family: "Inter", "Inter Fallback", system-ui, sans-serif;
 }
 
@@ -14,23 +11,3 @@ body {
 .line-height-1 { line-height: 1; }
 .line-height-2 { line-height: 1.5; }
 
-
-
-
-/*  */
-
-/* body {
-    font-family: "Inter", "Inter Fallback", system-ui, sans-serif;
-} */
-
-/* header {
-    font-size: 1.8rem;
-}
-
-.menu-header {
-    font-size: 1.3rem;
-}
-
-.menu-item {
-    font-size: 1rem;
-} */
