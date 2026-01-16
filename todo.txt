@@ -1,3 +1,0 @@
-rem points to text sizes
-browser icon
-signature in svg at the bottom of the "About" section
