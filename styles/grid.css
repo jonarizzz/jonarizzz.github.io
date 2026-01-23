@@ -94,6 +94,49 @@ header {
 
 
 
+
+/* ========================= */
+/* == Drawings page items == */
+/* ========================= */
+
+.content-intro {
+    margin: 20px;
+}
+
+/* Full-width section without max-width limitation */
+.full-width-section {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.full-width-section:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.section-header {
+    padding: 0 20px 15px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 12px;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.image-placeholder {
+    border: 1px solid #a8a8a8;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+
 @media (max-width: 1000px) {
 
     .two-dynamic-columns-parent {
