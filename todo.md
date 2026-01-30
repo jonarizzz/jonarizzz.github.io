@@ -5,4 +5,7 @@
 - [ ] browser icon
 - [ ] signature in svg at the bottom of the "About" section
 - [ ] dates on posts on the main page
-- [ ] unified design language implementation on galery
+- [x] unified design language implementation on galery
+- [ ] books page
+- [ ] travel page
+- [ ] fun links page
