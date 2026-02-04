@@ -22,3 +22,22 @@ a {
 .hover-text-color-3:hover { color: rgb(80, 80, 80); }
 .hover-text-color-4:hover { color: rgb(122, 122, 122); }
 
+
+/* Status colors */
+
+.status-yellow { color: #cfae70; }
+.status-green { color: #7fbf7f; }
+.status-red { color: #bf7f7f; }
+
+/* Books */
+.book-details {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.book-details.open {
+    max-height: 500px;
+    opacity: 1;
+}

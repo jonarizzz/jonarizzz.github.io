@@ -56,9 +56,9 @@ function render() {
 }
 
 function render_year_section(year, books) {
-    const section = document.createElement("div");
+    const section = document.createElement("p");
 
-    const title = document.createElement("h2");
+    const title = document.createElement("div");
     title.textContent = year;
     title.className = "font-size-3 text-color-1";
     section.appendChild(title);
@@ -76,9 +76,6 @@ function render_book(book) {
     const row = document.createElement("div");
     row.className = "personal-info-item";
 
-    const line = document.createElement("div");
-    line.className = "personal-info-item-line";
-
     const title = document.createElement("div");
     title.className = "book-title";
     title.innerHTML =
@@ -90,7 +87,8 @@ function render_book(book) {
 
     const meta = document.createElement("div");
     const status = document.createElement("div");
-    status.className = "book-meta status-" + book.status;
+    status.className =
+        "book-meta " + status_color_class(book.status);
     status.textContent = status_label(book.status);
 
     const rating = document.createElement("div");
@@ -107,13 +105,13 @@ function render_book(book) {
         const p = document.createElement("p");
         p.textContent = book.text;
         details.appendChild(p);
+
+        item.addEventListener("click", function () {
+            details.classList.toggle("open");
+        });
+        row.style.cursor = "pointer";
     }
 
-    title.addEventListener("click", function () {
-        details.classList.toggle("open");
-    });
-
-    row.appendChild(line);
     row.appendChild(title);
     row.appendChild(meta);
     item.appendChild(row);
@@ -124,8 +122,10 @@ function render_book(book) {
 
 function stars(count) {
     const total = 5;
-    const safe = Number.isFinite(count) ? count : 0;
-    const filled = Math.max(0, Math.min(total, safe));
+    if (!Number.isFinite(count)) {
+        return "без рейтинга";
+    }
+    const filled = Math.max(0, Math.min(total, count));
     return "★".repeat(filled) + "☆".repeat(total - filled);
 }
 
@@ -133,5 +133,12 @@ function status_label(status) {
     if (status === "reading") return "читаю";
     if (status === "finished") return "прочитано";
     if (status === "dropped") return "брошено";
+    return "";
+}
+
+function status_color_class(status) {
+    if (status === "reading") return "status-yellow";
+    if (status === "finished") return "status-green";
+    if (status === "dropped") return "status-red";
     return "";
 }

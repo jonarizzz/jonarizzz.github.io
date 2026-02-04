@@ -72,7 +72,8 @@ header {
   justify-content: space-between;
   display: flex;
   position: relative;
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .personal-info-item-line {
