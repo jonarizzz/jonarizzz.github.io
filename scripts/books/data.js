@@ -239,4 +239,121 @@ window.BOOKS_DATA = [
     "importance": 3,
     "text": ""
   },
+  {
+    "title": "Чистовик",
+    "author": "Сергей Лукьяненко",
+    "year": 2024,
+    "rating": 4,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Черновик",
+    "author": "Сергей Лукьяненко",
+    "year": 2024,
+    "rating": 4,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Странник по звёздам",
+    "author": "Джек Лондон",
+    "year": 2024,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Как нам бороться?",
+    "author": "Феликс Дзержинский",
+    "year": 2024,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Система вещей",
+    "author": "Жан Бодрийяр",
+    "year": 2024,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Педагогика угнетённых",
+    "author": "Паулу Фрейре",
+    "year": 2024,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Похождения бравого солдата Швейка",
+    "author": "Ярослав Гашек",
+    "year": 2024,
+    "rating": 3,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Задача трёх тел",
+    "author": "Лю Цысинь",
+    "year": 2024,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": "Редкий случай хорошей (даже отличной) современной научной фантастики"
+  },
+  {
+    "title": "Праздник, который всегда с тобой",
+    "author": "Эрнест Хемингуэй",
+    "year": 2024,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Незначительная деталь",
+    "author": "Адания Шибли",
+    "year": 2024,
+    "rating": 1,
+    "status": "finished",
+    "importance": 1,
+    "text": "Это просто позор"
+  },
+  {
+    "title": "Избранные стихи из всех книг",
+    "author": "Редьярд Киплинг",
+    "year": 2024,
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Памяти Каталонии",
+    "author": "Джордж Оруэлл",
+    "year": 2024,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Тени исчезают в полдень",
+    "author": "Анатолий Иванов",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
 ];
