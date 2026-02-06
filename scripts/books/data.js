@@ -744,4 +744,270 @@ window.BOOKS_DATA = [
     "text": ""
   },
 
+
+  {
+    "title": "Скверное начало",
+    "author": "Лемони Сникет",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Змеиный зал",
+    "author": "Лемони Сникет",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Огромное окно",
+    "author": "Лемони Сникет",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Игра в поддавки",
+    "author": "Александр Митич",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": "Из серии \"S.T.A.L.K.E.R.\""
+  },
+  {
+    "title": "Кровь, пот и пиксели",
+    "author": "Джейсон Шрейер",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Тонкое искусство пофигизма",
+    "author": "Марк Мэнсон",
+    "year": "Когда-то ещё",
+    "rating": 1,
+    "status": "finished",
+    "importance": 1,
+    "text": ""
+  },
+  {
+    "title": "Учитель фехтования",
+    "author": "Александр Дюма",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Грокаем алгоритмы",
+    "author": "Адитья Бхаргава",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и проклятое дитя",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 1,
+    "status": "finished",
+    "importance": 1,
+    "text": ""
+  },
+  {
+    "title": "Повесть о настоящем человеке",
+    "author": "Борис Полевой",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "\"Капитал\" в комиксах",
+    "author": "Дэвид Смит",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Хранители",
+    "author": "Алан Мур, Дэйв Гиббонс",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Чистый код",
+    "author": "Роберт Мартин",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "О гневе",
+    "author": "Луций Сенека",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Хорошо быть тихоней",
+    "author": "Стивен Чбоски",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Колыбель для кошки",
+    "author": "Курт Воннегут",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Компромисс",
+    "author": "Сергей Довлатов",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Женщины",
+    "author": "Чарльз Буковски",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Хлеб с ветчиной",
+    "author": "Чарльз Буковски",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Над пропостью во ржи",
+    "author": "Джером Сэлинджер",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Богатый папа, бедный папа",
+    "author": "Роберт Кийосаки",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Самый богатый человек в Вавилоне",
+    "author": "Джордж Клейсон",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "К чёрту всё! Берись и делай!",
+    "author": "Ричард Брэнсон",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Стив Джобс",
+    "author": "Уолтер Айзексон",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Мы",
+    "author": "Евгений Замятин",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Вечера на хуторе близ Диканьки",
+    "author": "Николай Гоголь",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "А зори здесь тихие",
+    "author": "Борис Васильев",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+
+// На лайвлибе с августа 2020-ого
+
+  {
+    "title": "Армагеддон",
+    "author": "Юрий Бурносов",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Прощай, оружие!",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+
 ];
