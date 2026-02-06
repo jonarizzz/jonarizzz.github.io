@@ -327,7 +327,7 @@ window.BOOKS_DATA = [
     "rating": 1,
     "status": "finished",
     "importance": 1,
-    "text": "Это просто позор"
+    "text": "Делит последнее место среди прочитанного за всю жизнь с Алексиевич"
   },
   {
     "title": "Избранные стихи из всех книг",
@@ -354,6 +354,179 @@ window.BOOKS_DATA = [
     "rating": 5,
     "status": "finished",
     "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Хирасима",
+    "author": "Джон Херси",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Совершая убийство или политическая экономия прав животных",
+    "author": "Боб Торрес",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Хакеры. Точка невозврата",
+    "author": "Александр Чубарьян",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Скидбладнир. Кровь и жизнь",
+    "author": "Марк Кузьмин",
+    "year": 2023,
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Принципы коммунизма",
+    "author": "Фридрих Энгельс",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "S.N.U.F.F.",
+    "author": "Виктор Пелевин",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "День рождения Инфанты",
+    "author": "Оскар Уайльд",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Грешники. Корпорация 'Кольцо'",
+    "author": "Александр Чубарьян",
+    "year": 2023,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Как важно быть серьёзным",
+    "author": "Оскар Уайльд",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Граф де Монте-Кристо",
+    "author": "Александр Дюма",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Понедельник начинается в субботу",
+    "author": "Братья Стругацкие",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Триумфальная арка",
+    "author": "Эрих Мария Ремарк",
+    "year": 2023,
+    "rating": 3,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Как слушать так, чтобы люди сами хотели вам всё рассказать",
+    "author": "Патрик Кинг",
+    "year": 2023,
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Бледный огонь",
+    "author": "Владимир Набоков",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "На пенсию в 35 лет",
+    "author": "Бабайкин",
+    "year": 2023,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Гамлет",
+    "author": "Уильям Шекспир",
+    "year": 2023,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Поправка 22",
+    "author": "Джозеф Хеллер",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Дурная кровь",
+    "author": "Джон Каррейру",
+    "year": 2023,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+
+
+  {
+    "title": "Армагеддон",
+    "author": "Фридрих Энгельс",
+    "year": 2022,
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
     "text": ""
   },
 ];
