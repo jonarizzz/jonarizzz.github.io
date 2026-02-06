@@ -518,15 +518,230 @@ window.BOOKS_DATA = [
     "importance": 5,
     "text": ""
   },
-
-
   {
-    "title": "Армагеддон",
-    "author": "Фридрих Энгельс",
+    "title": "Девушка, которая взрывала воздушные замки",
+    "author": "Стиг Ларссон",
     "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Девушка, которая играла с огнём",
+    "author": "Стиг Ларссон",
+    "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Девушка с татуировкой дракона",
+    "author": "Стиг Ларссон",
+    "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Искусство харизмы",
+    "author": "Чарли Хуперт",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Град обречённый",
+    "author": "Братья Стругацкие",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Райский сад",
+    "author": "Эрнест Хемингуэй",
+    "year": 2022,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Дюна",
+    "author": "Фрэнк Херберт",
+    "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "TRANSHUMANISM.INC",
+    "author": "Виктор Пелевин",
+    "year": 2022,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Американский психопат",
+    "author": "Брет Эллис",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Человек одинок",
+    "author": "Эрих Фромм",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Защита Лужина",
+    "author": "Владимир Набоков",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Железная пята",
+    "author": "Джек Лондон",
+    "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Иметь и не иметь",
+    "author": "Эрнест Хемингуэй",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Отель \"У погибшего альпиниста\"",
+    "author": "Братья Стругацкие",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Generation \"П\"",
+    "author": "Виктор Пелевин",
+    "year": 2022,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Уолден или жизнь в лесу",
+    "author": "Генри Дэвид Торо",
+    "year": 2022,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Капиталистический реализм",
+    "author": "Марк Фишер",
+    "year": 2021,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Каменные небеса",
+    "author": "ЧБУ",
+    "year": 2021,
     "rating": 2,
     "status": "finished",
     "importance": 2,
     "text": ""
   },
+  {
+    "title": "Почему социализм?",
+    "author": "Альберт Энштейн",
+    "year": 2020,
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Хакеры",
+    "author": "Александр Чубарьян",
+    "year": 2020,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Хакеры. Basic",
+    "author": "Александр Чубарьян",
+    "year": 2019,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Гений и богиня",
+    "author": "Олдос Хаксли",
+    "year": 2019,
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Трудно быть богом",
+    "author": "Братья Стругацкие",
+    "year": 2019,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Освенцим: Нацисты и \"окончательное решение еврейского вопроса\"",
+    "author": "Марк Фишер",
+    "year": 2019,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Шантарам",
+    "author": "Грегори Робертс",
+    "year": 2019,
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+
 ];
