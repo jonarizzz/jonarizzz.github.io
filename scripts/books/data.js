@@ -106,7 +106,7 @@ window.BOOKS_DATA = [
   },
   {
     "title": "В русских и французских тюрьмах",
-    "author": "Петр Кропоткин",
+    "author": "Пётр Кропоткин",
     "year": 2025,
     "rating": 5,
     "status": "finished",
@@ -142,7 +142,7 @@ window.BOOKS_DATA = [
   },
   {
     "title": "Нравственные начала анархизма",
-    "author": "Петр Кропоткин",
+    "author": "Пётр Кропоткин",
     "year": 2025,
     "rating": 5,
     "status": "finished",
@@ -420,7 +420,7 @@ window.BOOKS_DATA = [
     "text": ""
   },
   {
-    "title": "Грешники. Корпорация 'Кольцо'",
+    "title": "Грешники. Корпорация \"Кольцо\"",
     "author": "Александр Чубарьян",
     "year": 2023,
     "rating": 3,
