@@ -989,8 +989,655 @@ window.BOOKS_DATA = [
     "text": ""
   },
 
-// На лайвлибе с августа 2020-ого
+  {
+    "title": "Код Дурова. Реальная история \"Вконтакте\" и её создателя",
+    "author": "Николай Кононов",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Цветы для Элджерона",
+    "author": "Дэниел Киз",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Чайка Джонатан Ливингстон",
+    "author": "Ричард Бах",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Волшебник Изумрудного города",
+    "author": "Александр Волков",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Вино из одуванчиков",
+    "author": "Рэй Брэдбери",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Ревизор",
+    "author": "Николай Гоголь",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Собачье сердце",
+    "author": "Михаил Булгаков",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Мёртвые души",
+    "author": "Николай Гоголь",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Евгений Онегин",
+    "author": "Александр Пушкин",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "451 градус по Фарингейту",
+    "author": "Рэй Брэдбери",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Титан",
+    "author": "Теодор Драйзер",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Стоик",
+    "author": "Теодор Драйзер",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Финансист",
+    "author": "Теодор Драйзер",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Портрет Дориана Грея",
+    "author": "Оскар Уайльд",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Горе от ума",
+    "author": "Александр Грибоедов",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Маленький принц",
+    "author": "Антуан де Сент-Экзюпери",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Пятьдесят оттенков свободы",
+    "author": "Эрика Джеймс",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "На пятьдесят оттенков темнее",
+    "author": "Эрика Джеймс",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Пятьдесят оттенков серого",
+    "author": "Эрика Джеймс",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Франкенштейн. Мертвая армия",
+    "author": "Андрей Плеханов",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Эльдорадо",
+    "author": "Кирилл Бенедиктов",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Рим. Последний легат",
+    "author": "Шимун Врочек",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Че Гевара. Невесты Чиморте",
+    "author": "Карина Шаинян",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Че Гевара. Боливийский дедушка",
+    "author": "Карина Шаинян",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Хакеры. Эндшпиль",
+    "author": "Юрий Бурносов",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Революция. Японский городовой",
+    "author": "Юрий Бурносов",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 2,
+    "text": ""
+  },
+  {
+    "title": "Маруся. Конец и вновь начало",
+    "author": "Полина Волошина",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Маруся. Таежный квест",
+    "author": "Сергей Волков",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Маруся. Талисман бессмертия",
+    "author": "Полина Волошина, Евгений Кульков",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Хакеры. Паутина",
+    "author": "Александр Чубарьян",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Хакеры. Basic",
+    "author": "Александр Чубарьян",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и философский камень",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и Тайная комната",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и узник Азкабана",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и Кубок огня",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и Орден Феникса",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и Принц-полукровка",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Гарри Поттер и Дары Смерти",
+    "author": "Джоан Роулинг",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
 
+  {
+    "title": "Ромео и Джульетта",
+    "author": "Уильям Шекспир",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Путешествия Гулливера",
+    "author": "Джонатан Свифт",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Божественная комедия",
+    "author": "Данте Алигьери",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Повелитель мух",
+    "author": "Уильям Голдинг",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Мартин Иден",
+    "author": "Джек Лондон",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Преступление и наказание",
+    "author": "Фёдор Достоевский",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "О дивный новый мир",
+    "author": "Олдос Хаксли",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Бродяги Дхармы",
+    "author": "Джек Керуак",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Над пропастью во ржи",
+    "author": "Джером Селинджер",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Война и мир",
+    "author": "Лев Толстой",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Великий Гэтсби",
+    "author": "Фрэнсис Скотт Фицджеральд",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Сто лет одиночества",
+    "author": "Габриэль Гарсиа Маркез",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Звук и ярость",
+    "author": "Уильям Фолкнер",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Время жить и время умирать",
+    "author": "Эрих Мария Ремарк",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Фиеста",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Прощай, оружие!",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Старик и море",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "По ком звонит колокол",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Государство",
+    "author": "Платон",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Процесс",
+    "author": "Франц Кафка",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Заводной апельсин",
+    "author": "Энтони Бёрджесс",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Ночной портье",
+    "author": "Ирвин Шоу",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "Автостопом по Галактике. Ресторан \"У конца Вселенной\"",
+    "author": "Дуглас Адамс",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Мастер и Маргарита",
+    "author": "Михаил Булгаков",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Страх и отвращение в Лас-Вегасе",
+    "author": "Хантер Томпсон",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Так говорил Заратустра",
+    "author": "Фридрих Ницше",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+  {
+    "title": "1984",
+    "author": "Джордж Оруэлл",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Скотный двор",
+    "author": "Джордж Оруэлл",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Как разговаривать с кем угодно, когда угодно и где угодно",
+    "author": "Ларри Кинг",
+    "year": "Когда-то ещё",
+    "rating": 2,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Живи, вкалывай, сдохни. Репортаж с темной стороны Кремниевой долины",
+    "author": "Кори Пайн",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Улитка на склоне",
+    "author": "Братья Стругацкие",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Убить пересмешника",
+    "author": "Харпер Ли",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
+  {
+    "title": "Виноваты звезды",
+    "author": "Джон Грин",
+    "year": "Когда-то ещё",
+    "rating": 3,
+    "status": "finished",
+    "importance": 3,
+    "text": ""
+  },
+  {
+    "title": "Одиночество в сети",
+    "author": "Януш Леон Вишневский",
+    "year": "Когда-то ещё",
+    "rating": 5,
+    "status": "finished",
+    "importance": 5,
+    "text": ""
+  },
   {
     "title": "Армагеддон",
     "author": "Юрий Бурносов",
