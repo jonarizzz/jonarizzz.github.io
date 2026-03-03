@@ -23,8 +23,6 @@ function show_error() {
         "<div class='text-color-4'>Не удалось загрузить список книг.</div>";
 }
 
-// change 2 (optional / wip)
-
 function render() {
     const root = document.getElementById("books-root");
     root.innerHTML = "";
