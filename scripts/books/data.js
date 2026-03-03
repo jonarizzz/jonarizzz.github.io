@@ -1657,4 +1657,17 @@ window.BOOKS_DATA = [
     "text": ""
   },
 
+
+
+
+  {
+    "title": "Прощай, оружие!",
+    "author": "Эрнест Хемингуэй",
+    "year": "Когда-то ещё",
+    "rating": 4,
+    "status": "finished",
+    "importance": 4,
+    "text": ""
+  },
+
 ];
